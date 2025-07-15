@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+:root {
+    --dark: #373737;
+    --lighthover: #8D8D8D;
+    --darkhover: #636363;
+}
+
+body {
+    background: white;
+    font-family: "Heebo";
+    overflow-x: hidden;
+    margin: 0;
+    color: var(--dark);
+}
+.open {
+    margin: 0 auto;
+    overflow: hidden;
+    animation-name: open;
+}
+.cssanimation, .cssanimation span {
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span { display: inline-block }
+
+.title-text {
+    font-size: 15vw;
+    height: 16vw;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color: var(--dark); 
+    padding: 0;
+    width: auto;
+}
+
+.normal-text {
+    font-size: 1rem;
+    font-family: "Heebo";
+    color: var(--dark);
+}
+
+#menu {
+    height: 95vh;
+    position: fixed;
+    border-left: 1px solid var(--dark);
+    background: transparent;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 12.5vw;
+    z-index: 10;
+    transition: 0.2s;
+}
+#menu-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding-bottom: 2.5em;
+}
+#menu-index, #menu-bottom {
+    padding-left: 1vw;
+    position: relative;
+    z-index: 100;
+    transition: 0.2s;
+}
+
+#menu-about, #menu-projects {
+    margin-bottom: 1.25em;
+    transition: 0.2s;
+}
+
+.little-link {
+    background: none;
+    border: none;
+    font-family: "Heebo";
+    color: var(--dark);
+    font-size: 1em;
+    text-align: left;
+    text-decoration: none;
+}
+
+
+#footer {
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#separator {
+    overflow: hidden;
+    white-space: nowrap;
+    background: black;
+    width: 100%;
+}
+#separator-text {
+    color: white;
+}
+#footer-main {
+    width: 95vw;
+    position: relative;
+    margin-top: 5vh;
+}
+#footer-blob {
+    filter: blur(100px);
+    position: absolute;
+    z-index: -10;
+    width: 50vw;
+    top: -25vw;
+    animation: rotation 10s infinite;
+}
+@keyframes rotation {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}
+
+#footer-top {
+}
+#footer-row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vw;
+    margin-top: -10vh;
+    margin-left: -1vw;
+}
+#footer-row-2 {
+    height: 20vw;
+    margin-top: -10vh;
+    margin-left: -1vw;
+}
+#footer-index, #footer-about, #footer-projects, #footer-resume {
+    padding: 0;
+    margin: 0;
+    transition: 0.2s;
+}
+#footer-index:hover, #footer-about:hover, #footer-projects:hover, #footer-resume:hover {
+    color: var(--darkhover);
+    cursor: pointer;
+}
+#footer-about, #footer-resume {
+    margin-right: 1vw;
+}
+#footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 20vw;
+    margin-left: -1vw;
+    margin-top: -20vh;
+}
+#landing-linkedin, #landing-email {
+    padding: 0;
+    margin: 0;
+}
