@@ -81,9 +81,17 @@ body {
     font-size: 1em;
     text-align: left;
     text-decoration: none;
+    transition: 0.2s;
+}
+.little-link:hover {
+    color: red;
+    cursor: pointer;
 }
 
-
+#footer-main {
+    margin: 0;
+    padding: 0;
+}
 #footer {
     width: 100vw;
     margin-left: auto;
@@ -97,6 +105,7 @@ body {
     white-space: nowrap;
     background: black;
     width: 100%;
+    margin-top: 0;
 }
 #separator-text {
     color: white;
@@ -104,7 +113,7 @@ body {
 #footer-main {
     width: 95vw;
     position: relative;
-    margin-top: 5vh;
+    margin-top: 5vh;;
 }
 #footer-blob {
     filter: blur(100px);
