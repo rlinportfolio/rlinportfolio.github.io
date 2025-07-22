@@ -1,0 +1,44 @@
+#landing-title {
+    animation: open 3s;
+    margin: 0;
+    width: 100%;
+}
+
+#polyvoc-blob {
+    top: -35vh;
+    left: -30vw;
+    z-index: -1;
+}
+
+#ca-tab, #ca-text {
+    margin-top: 5vh;
+}
+#research-personas {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+#persona1, #persona2 {
+    width: 40vw;
+}
+
+#layout-text {
+    margin-top: 5vh;
+}
+
+.thumbnails {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+.tn-img {
+    width: 40vw;
+}
+#sgc-images {
+    display: flex;
+    justify-content: space-between;
+}
+#sgc-img {
+    width: 40vw;
+}
+ 

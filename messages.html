@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Rlin - Messages</title>
+        <link rel="stylesheet" href="./css/universal.css">
+        <link rel="stylesheet" href="./css/messages.css">
+        <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
+        <script src="./js/universal.js"></script>
+    </head>
+    <body>
+        <div class="normal-text" id="followmouse">→</div>
+        <div id="transition"></div>
+        <header id="menu-main"></header>
+        <div class="projects-landing projects-section" id="landing">
+            <img class="landing-blob" id="messages-blob" src="./assets/Messages/messages-blob.png">
+            <p class="title-text projects-landing-title cssanimation open sequence" id="landing-title">Messages</p>
+            <p class="normal-text projects-landing-text" id="landing-description">A video call integration concept for the Google Messages app, when only Google Duo existed.  </p>
+        </div>
+
+        <div class="section projects-overview projects-section">
+            <p class="header-text">PROJECT OVERVIEW</p>
+            <p class="projects-overview-description">Google Messages is a messaging app for Android users to send texts. It has options to call, text, upload media, and more, like many other texting apps. However, the app does not feature native video calling; it could only be done through Google Duo, which many people have never used or rarely use. I conducted end-to-end UX research and design to develop an idea of what integrated video calling would look like within Google Messages.</p>
+            <p class="projects-overview-problem"><span style="font-weight: 700">Problem</span> : Android users who use Google Messages as their default texting app do not have a convenient way of video calling. </p>
+            <p class="projects-overview-goal"><span style="font-weight: 700">Goal</span> :  Allow for Android users to have quick access to integrated video calling and visualize what that may look like in a way that addresses common concerns.  </p>
+            <p class="projects-overview-context">This project was conducted as the University of North Carolina at Chapel Hill App Team Carolina UI/UX Bootcamp final project.</p>
+            <div class="projects-overview-details">
+                <div class="projects-overview-detail projects-overview-details-role">
+                    <p class="projects-overview-details-header">ROLE</p>
+                    <p class="projects-overview-details-description">Solo UX Designer</p>
+                </div>
+                <div class="projects-overview-detail projects-overview-details-timeline">
+                    <p class="projects-overview-details-header">TIMELINE</p>
+                    <p class="projects-overview-details-description">June - July 2025 (1 month)</p>
+                </div>
+                <div class="projects-overview-detail projects-overview-details-tools">
+                    <p class="projects-overview-details-header">TOOLS</p>
+                    <p class="projects-overview-details-description">Google Forms, Google Sheets, Figma, Visual Studio Code</p>
+                </div>
+            </div>
+        </div>        
+        
+        <div class="projects-section" id="ca">
+            <div id="ca-left">
+                <div id="ca-left-top">
+                    <p class="header-text">COMPETITIVE<br>ANALYSIS</p>  
+                    <p class="normal-text" id="ca-text">
+                        Many other messaging applications have Integrated Video Calls. Google Messages does not, which can hinder users from using the application for the lack of this feature. 
+                        <br><br>
+                        They may be more prone to switch to something like WhatsApp, but it may be slightly more inconvenient for users because it does not work with SMS/MMS/RCS messaging. For Android users, there is not a “best” solution.
+                    </p>  
+                </div>
+                <p class="normal-text tab-message">[Click the image to open in a new tab]</p>
+            </div>
+            <img class="pimg" id="ca-img" src="./assets/Messages/competitive-analysis.png">
+        </div>
+
+        <div class="projects-section" id="research">
+            <p class="header-text header-right-text" id="research-header">Research</p>  
+            <p class="normal-text tab-message">[Click each image to open in a new tab]</p>
+            <div id="research-personas">
+                <img class="pimg" id="persona1" src="./assets/Messages/persona-1.png">
+                <img class="pimg" id="persona2" src="./assets/Messages/persona-2.png">
+            </div>
+            <p class="normal-text" id="research-text">I conducted user interviews of different demographics among those who currently use Google Messages. From the interviews, I created these two user personas to display the needs and expectations based on two main demographics. </p>
+        </div>
+
+        <div class="projects-section" id="ia">
+            <p class="header-text">Information<br>Architecture Map</p>
+            <p class="normal-text">I mapped out the entire Google Messages app to get an idea of where the video call buttons could go and how to integrate it.</p>
+            <img class="pimg" id="ia-map" src="./assets/Messages/ia-map.png">
+            <p class="normal-text tab-message">[Click the image to open in a new tab]</p>
+        </div>
+
+        <div class="projects-section" id="wireframe">
+            <p class="header-text">Initial Wireframes</p>
+            <p class="normal-text">I drafted two wireframes of the video calling feature to visualize what the views may look like.</p>
+            <div id="mobileview1">
+                <div id="w-v1">
+                    <div id="each-mobile">
+                        <img class="pimg" id="w-img" src="./assets/Messages/wireframe1.png">
+                        <p class="normal-text">View 1</p>
+                    </div>
+                </div>
+                <div id="w-v2">
+                    <div id="each-mobile">
+                        <img class="pimg" id="w-img" src="./assets/Messages/wireframe2.png">
+                        <p class="normal-text">View 2</p>
+                    </div>
+                </div>
+            </div>
+            <p class="normal-text tab-message" id="sw-tab">[Click to open each image in a new tab]</p>
+        </div>
+
+        <div class="projects-section" id="hifi">
+            <p class="header-text">Mockups</p>
+            <p class="normal-text" id="hifi-message">I then created mockups of all the places where the video calling feature could be added onto the app, including the video call feature itself.</p>
+            <p class="normal-text tab-message" id="hifi-tabmessage">[Click the images to open them in a new tab]</p>
+            <div id="mobileview-top">
+                <div id="mv-section">
+                    <p class="normal-text" style="font-weight: 700">Homepage : Added Call Left-Swipe Action</p>
+                    <div id="mobiletwo">
+                        <div id="each-mobile">
+                            <img class="pimg" id="w-img" src="./assets/messages/1-original.png">
+                            <p class="normal-text">Original</p>
+                        </div>
+                        <div id="each-mobile">
+                            <img class="pimg" id="w-img" src="./assets/messages/1-mockup.png">
+                            <p class="normal-text">Mockup</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="mv-section">
+                    <p class="normal-text" style="font-weight: 700">Homepage : Added Call Right-Swipe Action</p>
+                    <div id="mobiletwo">
+                        <div id="each-mobile">
+                            <img class="pimg" id="w-img" src="./assets/messages/2-original.png">
+                            <p class="normal-text">Original</p>
+                        </div>
+                        <div id="each-mobile">
+                            <img class="pimg" id="w-img" src="./assets/messages/2-mockup.png">
+                            <p class="normal-text">Mockup</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mobileview-top">
+                <div id="mv-section">
+                    <p class="normal-text" style="font-weight: 700">Homepage : Contact Popup</p>
+                    <div id="mobiletwo">
+                        <div id="each-mobile">
+                            <img class="pimg" id="w-img" src="./assets/messages/3-original.png">
+                            <p class="normal-text">Original</p>
+                        </div>
+                        <div id="each-mobile">
+                            <img class="pimg" id="w-img" src="./assets/messages/3-mockup.png">
+                            <p class="normal-text">Mockup</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="mv-section">
+                    <p class="normal-text" style="font-weight: 700">Texting : Video Call Embeds</p>
+                    <div id="mobiletwo">
+                        <div id="each-mobile">
+                            <img class="pimg" id="w-img" src="./assets/messages/4-original.png">
+                            <p class="normal-text">Original</p>
+                        </div>
+                        <div id="each-mobile">
+                            <img class="pimg" id="w-img" src="./assets/messages/4-mockup.png">
+                            <p class="normal-text">Mockup</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mobileview-top">
+                <div id="mv-section">
+                    <p class="normal-text" style="font-weight: 700">Clicking On A Video Call Button + Pending Call</p>
+                    <div id="mobiletwo">
+                        <div id="each-mobile">
+                            <img class="pimg" id="w-img" src="./assets/messages/5-mockup.png">
+                            <p class="normal-text">Original</p>
+                        </div>
+                        <div id="each-mobile">
+                            <img class="pimg" id="w-img" src="./assets/messages/5-original.png">
+                            <p class="normal-text">Mockup</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="mv-section">
+                    <p class="normal-text" style="font-weight: 700">Video Call Screens</p>
+                    <div id="mobiletwo">
+                        <div id="each-mobile">
+                            <img class="pimg" id="w-img" src="./assets/messages/6-view1.png">
+                            <p class="normal-text">View 1</p>
+                        </div>
+                        <div id="each-mobile">
+                            <img class="pimg" id="w-img" src="./assets/messages/6-view2.png">
+                            <p class="normal-text">View 2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mobileview-top">
+                <div id="mv-section">
+                    <p class="normal-text" style="font-weight: 700">Video Call: Mini Overlay</p>
+                    <div id="mobiletwo">
+                        <div id="each-mobile">
+                            <img class="pimg" id="w-img" src="./assets/messages/7-view1.png">
+                            <p class="normal-text">View 1</p>
+                        </div>
+                        <div id="each-mobile">
+                            <img class="pimg" id="w-img" src="./assets/messages/7-view2.png">
+                            <p class="normal-text">View 2</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="mv-section">
+                    <p class="normal-text" style="font-weight: 700">Edit Swipe Actions Options</p>
+                    <div id="mobiletwo">
+                        <div id="each-mobile">
+                            <img class="pimg" id="w-img" src="./assets/messages/8-original.png">
+                            <p class="normal-text">Original</p>
+                        </div>
+                        <div id="each-mobile">
+                            <img class="pimg" id="w-img" src="./assets/messages/8-mockup.png">
+                            <p class="normal-text">Mockup</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mobileview-top">
+                <div id="mv-section">
+                    <p class="normal-text" style="font-weight: 700">Edit Swipe Actions Options: Call + Video Call Option Previews</p>
+                    <div id="mobiletwo">
+                        <div id="each-mobile">
+                            <img class="pimg" id="w-img" src="./assets/messages/9-original.png">
+                            <p class="normal-text">Original</p>
+                        </div>
+                        <div id="each-mobile">
+                            <img class="pimg" id="w-img" src="./assets/messages/9-mockup.png">
+                            <p class="normal-text">Mockup</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="projects-section final">
+            <p class="header-text final-header">Results</p>
+            <p class="normal-text final-text">- Prototyped a mockup design for how a video calling feature may look within the Google Messages Material UI, eliminating the need for an external app like Google Duo</p>
+            <p class="normal-text final-text">- Prioritized accessibility and ease of use, placing a video call within one interaction from a contact conversation</p>
+            <p class="normal-text final-text">- Expected impact includes an increased use of the Google Messages app and faster access to both calls and video calls</p>
+            <p class="normal-text final-text">- Presented the final prototype at the University of North Carolina at Chapel Hill App Team Carolina UI/UX Bootcamp as a final capstone</p>
+            
+            <p class="header-text final-header reflection-text">Reflection</p>
+            <p class="normal-text final-text">- Learned how to design within the constraints of an existing design system while introducing a new feature, in this case, with Google’s Material UI and adding video calling.</p>
+            <p class="normal-text final-text">- Practiced finding a balance between creativity and consistency to ensure that the video calling feature felt like it was really part of the app. </p>
+            <p class="normal-text final-text">- If I had more time or expanded on this project, I’d conduct usability tests with both Android and iOS users to collect their opinions on what could be changed or improved. I would also have conducted more user interviews, including with iOS users to understand what concerns they have about FaceTime and what makes it intuitive, reliable, and practical.</p>
+        </div>
+        <footer id="footer"></footer>
+
+    </body>
+</html>

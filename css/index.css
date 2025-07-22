@@ -23,10 +23,10 @@
 
 #landing-top-text {
     margin: 0;
-    padding-left: 20px;
     white-space: nowrap;
     overflow-x: hidden;
     animation: open 4s;
+    padding-left: 1.25vw;
 }
 #landing-bottom { 
     margin-top: -30vh;
@@ -36,14 +36,13 @@
     padding-top: 9vh;
     position: relative;
     z-index: 1;
-    padding-left: 20px;
     padding-right: 5.25vw;
 }
 
 #landing-intro {
     width: 27em;
     margin: 0;
-    padding-left: 20px;
+    padding-left: 1.25vw;
     overflow-x: hidden;
 }
 #landing-name {
@@ -59,65 +58,7 @@
     from { width: 0; opacity: 100;}
 }
 
-#landing-linkedin, #landing-email {
-    margin-right: 2.5em;
-    
-}
 
-#projects {
-    margin-top: 10vh;
-    background: var(--dark);
-    padding-left: 2vw;
-    padding-top: 15vh;
-    width: 100vw;
-    height: 90vh;
-}
-#projects-top {
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    padding-bottom: 5vh;
-}
-#projects-top-label {
-    color: white;
-    text-align: left;
-    padding-right: 5vw;
-    height: 100%;
-    margin-top: 3vw;
-}
-#projects-numbers {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    position: relative;
-    z-index: 10;
-    height: 15vw;
-}
-.projects-number {
-    color: white;
-    transition: 0.2s;
-    margin-left: 5vw;
-}
-.projects-number:hover {
-    color: var(--lighthover);
-    cursor: pointer;
-}
 
-#projects-bottom {
-    border-top: 1px solid white;
-    width: 84.5vw;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    flex-direction: column;
-}
-#project-name {
-    color: white;
-    height: 15vw;
-    margin: 0;
-    margin-left: -1vw;
-}
-#project-description {
-    color: white;
-    margin-top: 5vh;
-}
+
+

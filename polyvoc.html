@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Rlin - Polyvoc</title>
+        <link rel="stylesheet" href="./css/universal.css">
+        <link rel="stylesheet" href="./css/polyvoc.css">
+        <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
+        <script src="./js/universal.js"></script>
+    </head>
+    <body>
+        <div class="normal-text" id="followmouse">→</div>
+        <div id="transition"></div>
+        <header id="menu-main"></header>
+        <div class="projects-landing projects-section" id="landing">
+            <img class="landing-blob" id="polyvoc-blob" src="./assets/Polyvoc/polyvoc-blob.png">
+            <p class="title-text projects-landing-title cssanimation open sequence" id="landing-title">Polyvoc</p>
+            <p class="normal-text projects-landing-text" id="landing-description">A company website built for a client that runs a studio art class business for K - 12 students.</p>
+        </div>
+
+        <div class="section projects-overview projects-section">
+            <p class="header-text">PROJECT OVERVIEW</p>
+            <p class="projects-overview-description">Polyvoc is the name of the company and website designed and developed for a client that runs an art teaching studio for elementary to high school students in New York City. The website would provide a way for students or parents to access information about courses and to book courses, establishing their online presence. I conducted end-to-end UX research and design, and developed the website using HTML, CSS, and JavaScript.  </p>
+            <p class="projects-overview-goal"><span style="font-weight: 700">Goal</span> :  Provide students and parents looking for art classes in New York City a way to book courses online. Also have a one-stop shop for all of the information about the business and the services provided. </p>
+            <p class="projects-overview-context">This project was conducted under the website design business I run, called Fluorescence Design LLC. </p>
+            <div class="projects-overview-details">
+                <div class="projects-overview-detail projects-overview-details-role">
+                    <p class="projects-overview-details-header">ROLE</p>
+                    <p class="projects-overview-details-description">Solo UX Designer, Web Developer</p>
+                </div>
+                <div class="projects-overview-detail projects-overview-details-timeline">
+                    <p class="projects-overview-details-header">TIMELINE</p>
+                    <p class="projects-overview-details-description">June - July 2025 (1 month)</p>
+                </div>
+                <div class="projects-overview-detail projects-overview-details-tools">
+                    <p class="projects-overview-details-header">TOOLS</p>
+                    <p class="projects-overview-details-description">Google Forms, Google Sheets, Figma, Visual Studio Code</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-section" id="ca">
+            <p class="header-text">Competitive Analysis</p>
+            <p class="normal-text" id="ca-text">
+                - Many other education art studio websites had confusing elements, such as a cluttered UI in some places or broken or overwhelming amount of links.
+                <br>- On several of the websites, it was difficult to find where to book classes, or required too many clicks to reach the booking page. 
+                <br><br>
+                However, almost every education art studio website had a fairly simple UI, even if there were places that were harder to read. 
+            </p>
+            <a class="normal-text tab-message" id="ca-tab" target="_blank" href="https://docs.google.com/document/d/1IOsRlQkX5yFlLlz7fSjiz6scOmEZEl2wxyIk_QuTQn4/edit?usp=sharing">[Click here to read the full competitive analysis]</a>
+        </div>
+
+        <div class="projects-section">
+            <p class="header-text header-right-text">User Research</p>
+            <p class="normal-text" id="research-text">
+                Surveys were sent out to students and parents. Many of the respondents reported needing a way to verify class quality and check prices. They also expressed that a lack of professionality, poor design, and ads can make them distrust a tutor’s website.
+                <br><br>
+                These user personas were created based on their responses. 
+            </p>
+            <div id="research-personas">
+                <img class="pimg" id="persona1" src="./assets/Polyvoc/Persona1.png">
+                <img class="pimg" id="persona2" src="./assets/Polyvoc/Persona2.png">
+            </div>
+            <p class="normal-text tab-message">[Click each image to open in a new tab]</p>
+        </div>
+
+        <div class="projects-section">
+            <p class="header-text">Page Layout</p>
+            <p class="normal-text" id="layout-text">
+                The page layout draft was formed through what the client wanted to put on the website, as well as communication about competitors’ websites’ pages. Additional sections were also added after user interviews and surveys. 
+                <br><br>
+                <span style="font-weight: 700">HOME</span><br>
+                - Landing section<br>
+                &nbsp;&nbsp;&nbsp;- Slogan or Polyvoc logo<br>
+                &nbsp;&nbsp;&nbsp;- Short catchphrase<br>
+                &nbsp;&nbsp;&nbsp;- Book a course button<br><br>
+                - About section<br>
+                &nbsp;&nbsp;&nbsp;- Description of Polyvoc<br>
+                &nbsp;&nbsp;&nbsp;- Mission statement<br>
+                &nbsp;&nbsp;&nbsp;- Courses section<br>
+                &nbsp;&nbsp;&nbsp;- General description (and maybe instructions on how to book a course)<br>
+                &nbsp;&nbsp;&nbsp;- Individual course<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Title + Level<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Short description<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Price<br>
+                &nbsp;&nbsp;&nbsp;- Brief description of each course + image<br>
+                &nbsp;&nbsp;&nbsp;- Button that takes you to the courses pages for each level<br><br>
+                - Portfolio Section<br><br>
+                - Testimonials section<br>
+                &nbsp;&nbsp;&nbsp;- 2 - 3 testimonials/reviews<br><br>
+                - Call-to-action section<br>
+                &nbsp;&nbsp;&nbsp;- Book a course button<br>
+                &nbsp;&nbsp;&nbsp;- Contact button that takes you to the contact page<br>
+                <br><br>
+                <span style="font-weight: 700">COURSES</span><br>
+                - Side menu bar for different grades/modes<br>
+                - Course image<br>
+                - Course Title<br>
+                - Course description<br>
+                - Button or link to book the course<br>
+                <br><br>
+                <span style="font-weight: 700">PORTFOLIO</span><br>
+                - Separated by grade level (K - 3rd, 4th - 9th, college portfolio)<br>
+                - Each artwork<br>
+                &nbsp;&nbsp;&nbsp;- Title, description<br>
+                <br><br>
+                <span style="font-weight: 700">CONTACT</span><br>
+                - Contact form<br>
+                &nbsp;&nbsp;&nbsp;- Name<br>
+                &nbsp;&nbsp;&nbsp;- Email<br>
+                &nbsp;&nbsp;&nbsp;- Phone (Optional)<br>
+                &nbsp;&nbsp;&nbsp;- Message<br>
+                - Location<br>
+                - Location map
+
+            </p>
+        </div>
+
+        <div class="projects-section">
+            <p class="header-text">Information Architecture</p>
+            <p class="normal-text" id="ia-text">Based on the page layout and features, I made an information architecture map to show the links to different pages.</p>
+            <img class="pimg" id="ia-map" src="assets/Polyvoc/IA-Map.png">
+            <p class="normal-text tab-message">[Click to open map in a new tab]</p>
+        </div>
+
+        <div class="projects-section" id="wf">
+            <p class="header-text">Wireframes</p>
+            <div class="thumbnails">
+                <div class="tn-each">
+                    <p class="normal-text" style="font-weight: 700">Home</p>
+                    <img class="pimg tn-img" src="./assets/Polyvoc/Wireframe-landing-thumbnail.png">
+                </div>
+                <div class="tn-each">
+                    <p class="normal-text" style="font-weight: 700">Courses</p>
+                    <img class="pimg tn-img" src="./assets/Polyvoc/Wireframe-courses-thumbnail.png">
+                </div>
+            </div>
+            <div class="thumbnails">
+                <div class="tn-each">
+                    <p class="normal-text" style="font-weight: 700">Portfolio</p>
+                    <img class="pimg tn-img" src="./assets/Polyvoc/Wireframe-portfolio-thumbnail.png">
+                </div>
+                <div class="tn-each">
+                    <p class="normal-text" style="font-weight: 700">Contact</p>
+                    <img class="pimg tn-img" src="./assets/Polyvoc/Wireframe-contact-thumbnail.png">
+                </div>
+            </div>
+            <p class="normal-text tab-message">[Click to open each wireframe in a new tab]</p>
+        </div>
+
+        <div class="projects-section">
+            <p class="header-text header-right-text">Style Guide +<br>Components</p>
+            <p class="normal-text">After communicating with the client and getting the wireframe layouts approved, I created a style guide and some components for the final design, which I showed to the client as well. </p>
+            <div id="sgc-images">
+                <img class="pimg" id="sgc-img" src="./assets/Polyvoc/style-guide.png">
+                <img class="pimg" id="sgc-img" src="./assets/Polyvoc/components.png">
+            </div>
+        </div>
+
+        <div class="projects-section" id="hifi">
+            <p class="header-text header-right-text">High-Fidelity Prototypes</p>
+            <div class="thumbnails">
+                <div class="tn-each">
+                    <p class="normal-text" style="font-weight: 700">Home</p>
+                    <img class="pimg tn-img" src="./assets/Polyvoc/landing-thumbnail.png">
+                </div>
+                <div class="tn-each">
+                    <p class="normal-text" style="font-weight: 700">Courses</p>
+                    <img class="pimg tn-img" src="./assets/Polyvoc/courses-thumbnail.png">
+                </div>
+            </div>
+            <div class="thumbnails">
+                <div class="tn-each">
+                    <p class="normal-text" style="font-weight: 700">Portfolio</p>
+                    <img class="pimg tn-img" src="./assets/Polyvoc/portfolio-thumbnail.png">
+                </div>
+                <div class="tn-each">
+                    <p class="normal-text" style="font-weight: 700">Contact</p>
+                    <img class="pimg tn-img" src="./assets/Polyvoc/contact-thumbnail.png">
+                </div>
+            </div>
+            <p class="normal-text tab-message">[Click to open each wireframe in a new tab]</p>
+        </div>
+
+        <div class="projects-section final">
+            <p class="header-text final-header">Results</p>
+            <p class="normal-text final-text">- Communicated with a client that runs a business throughout the whole process of research, design, and development of a desktop website from scratch</p>
+            <p class="normal-text final-text">- The Polyvoc website provided a hub for parents and students to find information about booking art classes </p>
+            <p class="normal-text final-text">- Being able to book courses without needing to directly contact an employee at Polyvoc, and providing booking buttons across the site increased conversion rates</p>
+            <p class="normal-text final-text">- After the website’s development, clients jumped from about 50 students to NUMBER from TIME FRAME</p>
+            
+            <p class="header-text final-header reflection-text">Reflection</p>
+            <p class="normal-text final-text">- This project helped build on my understanding of clarity and flexibility in design. Having two very different audiences with students and parents, I had to be intentional with the surveys and feedback they provided, ensuring that I think very carefully about how I presented information and how easy it was to reach the call-to-action. </p>
+            <p class="normal-text final-text">- If time allowed, I would have conducted in-person interviews with both parents and students to help get a real sense of their issues with existing booking class sites, and what their expectations were. </p>
+            <p class="normal-text final-text">- Designing and developing Polyvoc’s website showed how many factors go into designing for a business with actual needs and goals. I realized how important it was to capture the personality of the company and build trust with a user quickly to prevent negative perceptions of the business and at the same time, lead them to take the next step, like signing up for a class. </p>
+        </div>
+
+
+        <footer id="footer"></footer>
+
+    </body>
+</html>

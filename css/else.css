@@ -1,0 +1,78 @@
+#landing-title {
+    animation: open 3s;
+    margin: 0;
+    width: 100%;
+}
+
+#else-blob {
+    top: -50vh;
+    right: 20vw;
+    z-index: -10;
+}
+
+
+#ca {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#ca-img {
+    height: 100vh;
+}
+
+
+#ca-left {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    margin-right: 2.5vw;
+}
+#ca-text {
+    margin-top: 5vh;
+}
+
+#research-personas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#persona1, #persona2 {
+    width: 40vw;
+}
+
+#feature-sections {
+    display: flex;
+    margin-top: 5vh;
+}
+#feature-right, #feature-left {
+    width: 40vw;
+}
+#feature-right {
+    margin-left: 5vw;
+}
+#ia-text {
+    margin-top: 5vh;
+}
+
+#stylecomponents {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+#stylecomponents-left {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#components-img, #pimg {
+    width: 100%;
+}
+#styles-img {
+    width: 20vw;
+}

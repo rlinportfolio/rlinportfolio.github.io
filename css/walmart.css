@@ -1,0 +1,49 @@
+#landing-title {
+    animation: open 3s;
+    margin: 0;
+    width: 100%;
+}
+
+#walmart-blob {
+    top: -5vh;
+    left: -30vw;
+    z-index: -1;
+}
+
+#research-text {
+    margin-top: 5vh;
+}
+
+#personas {
+    display: flex;
+    margin-top: 2.5vh;
+}
+#personas-img {
+    width: 60vw;
+    margin-right: 2.5vw;
+}
+
+#mockups-tabm {
+    text-align: right;
+}
+
+.m-section {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.m-section-imgs {
+    display: flex;
+    justify-content: space-between;
+}
+.m-img {
+    width: 40vw;
+}
+
+#m-header {
+    font-weight: 700;
+}
+
+
+
+
