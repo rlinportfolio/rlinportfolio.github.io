@@ -39,7 +39,7 @@ function components() {
         </div>
     `;
     document.getElementById("footer").innerHTML = footer;
-    if (window.location.pathname.includes("index") || window.location.pathname.pathname == "") {
+    if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
         let projects = `
             <div id="projects">
                 <div id="projects-top">
