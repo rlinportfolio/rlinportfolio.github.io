@@ -91,7 +91,7 @@ function menuHoverEffects(id, bg) {
 }
 
 function indexMenu() {
-    if (window.location.pathname.includes("index")) {
+    if (window.location.pathname.includes("index") || window.location.pathname === "/")) {
         onscroll = (event) => {
             var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
             scrollTop = (scrollTop/window.innerHeight) * 100;
