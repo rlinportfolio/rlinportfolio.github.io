@@ -307,7 +307,7 @@ document.addEventListener('mouseover', function(e) {
                 document.getElementById("followmouse").style = "color: white; background: #4EB0FF; transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
             }
             if (hoveredElement.innerHTML == "Email") {
-                document.getElementById("followmouse").innerHTML = "rlin@unc.edu [Click to Copy]";
+                document.getElementById("followmouse").innerHTML = "rlin@unc.edu&nbsp;&nbsp;&nbsp;[Click to Copy]";
             }
             
         }
@@ -318,7 +318,7 @@ document.addEventListener('mouseover', function(e) {
 });
 
 function emailClick() {
-    document.getElementById("followmouse").innerHTML = "rlin@unc.edu [Copied!]";
+    document.getElementById("followmouse").innerHTML = "rlin@unc.edu&nbsp;&nbsp;&nbsp;[Copied]";
     document.getElementById("followmouse").style = "color: var(--goodgreen); background: white; transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
     navigator.clipboard.writeText("rlin@unc.edu");
 }
