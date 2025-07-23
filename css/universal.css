@@ -131,7 +131,6 @@ body {
     border: none;
     font-family: "Heebo";
     color: var(--dark);
-    font-size: 1em;
     text-align: left;
     text-decoration: none;
     transition: 0.2s;
@@ -296,6 +295,8 @@ body {
     height: 20vw;
     margin-left: .25vw;
     margin-top: -20vh;
+    overflow-y: hidden;
+    padding-bottom: 2.5vh;
 }
 #landing-linkedin, #landing-email {
     padding: 0;

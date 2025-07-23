@@ -1,11 +1,11 @@
 function components() {
     let header = `
         <div id="menu">
-            <button class="little-link" id="menu-index" onclick="toLink('./index.html')">Index</button>
+            <button class="normal-text little-link" id="menu-index" onclick="toLink('./index.html')">Index</button>
             <div id="menu-bottom">
-                <button class="little-link" id="menu-about" onclick="toLink('./about.html')">About</button>
-                <button class="little-link" id="menu-projects" onclick="toProjects()">Projects</button>
-                <button class="little-link" id="menu-resume" onclick="toResume()">Resume</button>
+                <button class="normal-text little-link" id="menu-about" onclick="toLink('./about.html')">About</button>
+                <button class="normal-text little-link" id="menu-projects" onclick="toProjects()">Projects</button>
+                <button class="normal-text little-link" id="menu-resume" onclick="toResume()">Resume</button>
             </div>
         </div>
     `;
@@ -30,8 +30,8 @@ function components() {
                 </div>
                 <div id="footer-bottom">
                     <div id="footer-bottom-left">
-                        <a class="little-link" id="landing-linkedin" target="_blank" href="https://www.linkedin.com/in/richardlin4375/">LinkedIn</a>
-                        <a class="little-link" id="landing-email" target="_blank" onclick="emailClick()">Email</a>
+                        <a class="normal-text little-link" id="landing-linkedin" target="_blank" href="https://www.linkedin.com/in/richardlin4375/">LinkedIn</a>
+                        <a class="normal-text little-link" id="landing-email" target="_blank" onclick="emailClick()">Email</a>
                     </div>
                     <p class="title-text" id="footer-resume" onclick="toResume()">RESUME</p>
                 </div>
@@ -221,12 +221,14 @@ function switchProject4() {
     projectsLink = "./messages.html";
 }
 
-
+var transitioning = false;
 function toLink(link) {
+    transitioning = true;
     document.getElementById("transition").style.height = "100vh";
     document.getElementById("menu").style = "background: transparent";
     setTimeout(() => {
         window.open(link, "_self");
+        transitioning = false;
     }, 700);
 }
 function toAbout() {
@@ -251,6 +253,13 @@ function toResume() {
     window.open("./assets/resume.pdf", "_blank");
 }
 
+
+setInterval (forceCloseTransition, 100);
+function forceCloseTransition() {
+    if (document.getElementById("transition").style.height != "0px" && !transitioning) {
+        document.getElementById("transition").style = "height: 0";
+    }
+}
 
 window.onload = function() {
     components();
@@ -285,16 +294,16 @@ document.addEventListener('mouseover', function(e) {
                 }
                 document.getElementById("followmouse").innerHTML = hoveredElement.innerHTML + spaceArrow;
             }
-            if (hoveredElement.innerHTML == "ELSE!") {
+            if (hoveredElement.innerHTML == "ELSE!" || hoveredElement.innerHTML == "01") {
                 document.getElementById("followmouse").style = "color: white; background: var(--purple); transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
             }
-            if (hoveredElement.innerHTML == "Walmart") {
+            if (hoveredElement.innerHTML == "Walmart" || hoveredElement.innerHTML == "02") {
                 document.getElementById("followmouse").style = "color: white; background: #0071CE; transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
             }
-            if (hoveredElement.innerHTML == "Polyvoc") {
+            if (hoveredElement.innerHTML == "Polyvoc" || hoveredElement.innerHTML == "03") {
                 document.getElementById("followmouse").style = "color: white; background: #FF6200; transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
             }
-            if (hoveredElement.innerHTML == "Messages") {
+            if (hoveredElement.innerHTML == "Messages" || hoveredElement.innerHTML == "04") {
                 document.getElementById("followmouse").style = "color: white; background: #4EB0FF; transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
             }
             if (hoveredElement.innerHTML == "Email") {
