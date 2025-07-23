@@ -280,7 +280,7 @@ document.addEventListener('mouseover', function(e) {
         const computedStyle = getComputedStyle(e.target);
         const cursorType = computedStyle.cursor;
         if (cursorType == "pointer") {
-            document.getElementById("followmouse").style = "text-transform: capitalize; color: black; background: white; transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid black";
+            document.getElementById("followmouse").style = "text-transform: capitalize; color: black; background: white; transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
             const hoveredElement = document.elementFromPoint(event.clientX, event.clientY);
             if (hoveredElement && hoveredElement.tagName.toLowerCase() !== 'div') {
                 var spaceArrow = "&nbsp;&nbsp;&nbsp;&nbsp;→";
@@ -290,16 +290,16 @@ document.addEventListener('mouseover', function(e) {
                 document.getElementById("followmouse").innerHTML = hoveredElement.innerHTML + spaceArrow;
             }
             if (hoveredElement.innerHTML == "ELSE!") {
-                document.getElementById("followmouse").style = "text-transform: capitalize; color: white; background: var(--purple); transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid black";
+                document.getElementById("followmouse").style = "text-transform: capitalize; color: white; background: var(--purple); transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
             }
             if (hoveredElement.innerHTML == "Walmart") {
-                document.getElementById("followmouse").style = "text-transform: capitalize; color: white; background: #0071CE; transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid black";
+                document.getElementById("followmouse").style = "text-transform: capitalize; color: white; background: #0071CE; transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
             }
             if (hoveredElement.innerHTML == "Polyvoc") {
-                document.getElementById("followmouse").style = "text-transform: capitalize; color: white; background: #FF6200; transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid black";
+                document.getElementById("followmouse").style = "text-transform: capitalize; color: white; background: #FF6200; transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
             }
             if (hoveredElement.innerHTML == "Messages") {
-                document.getElementById("followmouse").style = "text-transform: capitalize; color: white; background: #4EB0FF; transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid black";
+                document.getElementById("followmouse").style = "text-transform: capitalize; color: white; background: #4EB0FF; transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
             }
             
         }
