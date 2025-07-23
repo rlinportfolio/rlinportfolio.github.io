@@ -22,7 +22,7 @@ body {
     width: 100vw;
     height: 100vh;
     bottom: 0;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
 #followmouse {
@@ -32,10 +32,9 @@ body {
     align-items: center;
     padding-left: 2vw;
     padding-right: 2vw;
-    
     position: fixed;
     transform: rotate(-200deg);
-    border-radius: 100px;
+    border-radius: 0px;
     border: none;
     width: auto; height: 2vw;
     z-index: 100;
@@ -170,12 +169,16 @@ body {
     height: 15vw;
 }
 .projects-number {
-    color: white;
+    color: var(--lighthover);
     transition: 0.2s;
     margin-left: 5vw;
 }
 .projects-number:hover {
-    color: var(--lighthover);
+    color: var(--darkhover);
+    cursor: pointer;
+}
+.projects-number.activelist {
+    color: white;
     cursor: pointer;
 }
 

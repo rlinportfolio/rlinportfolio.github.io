@@ -10,10 +10,10 @@
 }
 
 #landing-blurb {
-    filter: blur(100px);
+    filter: blur(125px) saturate(175%);
     position: absolute;
     width: 50vw;
-    top: -25vw;
+    top: -15vw;
     right: 0;
     animation: rotation 10s infinite;
     z-index: -1;
