@@ -4,10 +4,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: white;
 }
 
 #about-pic {
-    width: 30vw;
+    height: 80vh;
     filter: grayscale(100%);
     margin-left: 2.5vw;
 }
