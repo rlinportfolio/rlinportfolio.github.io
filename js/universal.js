@@ -31,7 +31,7 @@ function components() {
                 <div id="footer-bottom">
                     <div id="footer-bottom-left">
                         <a class="little-link" id="landing-linkedin" target="_blank" href="https://www.linkedin.com/in/richardlin4375/">LinkedIn</a>
-                        <a class="little-link" id="landing-email" target="_blank" href="mailto:rlin@unc.edu">Email</a>
+                        <a class="little-link" id="landing-email" target="_blank" onclick="emailClick()">Email</a>
                     </div>
                     <p class="title-text" id="footer-resume" onclick="toResume()">RESUME</p>
                 </div>
@@ -152,7 +152,7 @@ function projectMenu() {
     if (window.location.pathname.includes("else") || window.location.pathname.includes("walmart") || window.location.pathname.includes("polyvoc") || window.location.pathname.includes("messages")) {
         setTimeout(() => {
             document.getElementById("menu").style = "background: white;";
-        }, 500);
+        }, 800);
         onscroll = (event) => {
             var body = document.body,
             html = document.documentElement;
@@ -183,10 +183,6 @@ function projectMenu() {
 }
 
 var projectsLink = "./else.html";
-
-function projectHover(num) {
-    document.getElementById(num).style.color = "var(--darkhover)";
-}
 
 function switchProject1() {
     document.getElementById("project-number-1").classList.add("activelist");
@@ -280,7 +276,7 @@ document.addEventListener('mouseover', function(e) {
         const computedStyle = getComputedStyle(e.target);
         const cursorType = computedStyle.cursor;
         if (cursorType == "pointer") {
-            document.getElementById("followmouse").style = "text-transform: capitalize; color: black; background: white; transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
+            document.getElementById("followmouse").style = "color: black; background: white; transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
             const hoveredElement = document.elementFromPoint(event.clientX, event.clientY);
             if (hoveredElement && hoveredElement.tagName.toLowerCase() !== 'div') {
                 var spaceArrow = "&nbsp;&nbsp;&nbsp;&nbsp;→";
@@ -290,16 +286,19 @@ document.addEventListener('mouseover', function(e) {
                 document.getElementById("followmouse").innerHTML = hoveredElement.innerHTML + spaceArrow;
             }
             if (hoveredElement.innerHTML == "ELSE!") {
-                document.getElementById("followmouse").style = "text-transform: capitalize; color: white; background: var(--purple); transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
+                document.getElementById("followmouse").style = "color: white; background: var(--purple); transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
             }
             if (hoveredElement.innerHTML == "Walmart") {
-                document.getElementById("followmouse").style = "text-transform: capitalize; color: white; background: #0071CE; transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
+                document.getElementById("followmouse").style = "color: white; background: #0071CE; transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
             }
             if (hoveredElement.innerHTML == "Polyvoc") {
-                document.getElementById("followmouse").style = "text-transform: capitalize; color: white; background: #FF6200; transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
+                document.getElementById("followmouse").style = "color: white; background: #FF6200; transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
             }
             if (hoveredElement.innerHTML == "Messages") {
-                document.getElementById("followmouse").style = "text-transform: capitalize; color: white; background: #4EB0FF; transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
+                document.getElementById("followmouse").style = "color: white; background: #4EB0FF; transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
+            }
+            if (hoveredElement.innerHTML == "Email") {
+                document.getElementById("followmouse").innerHTML = "rlin@unc.edu [Click to Copy]";
             }
             
         }
@@ -308,5 +307,11 @@ document.addEventListener('mouseover', function(e) {
             document.getElementById("followmouse").innerHTML = "→";
         }
 });
+
+function emailClick() {
+    document.getElementById("followmouse").innerHTML = "rlin@unc.edu [Copied!]";
+    document.getElementById("followmouse").style = "color: var(--goodgreen); background: white; transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
+    navigator.clipboard.writeText("rlin@unc.edu");
+}
 
 

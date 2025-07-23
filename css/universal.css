@@ -5,6 +5,7 @@
     --darkhover: #636363;
     --tabmessage: #009DFF;
     --purple: rgb(111, 0, 255);
+    --goodgreen: rgb(0, 185, 93);
 }
 
 body {
@@ -407,5 +408,9 @@ body {
     padding-right: 5vw;
     line-height: 2vw;
     margin-top: 0vh;
+}
+
+#landing-email {
+
 }
 
