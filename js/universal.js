@@ -236,8 +236,8 @@ function toResume() {
 
 
 window.onload = function() {
-    document.getElementById("transition").style = "height: 0";
     components();
+    document.getElementById("transition").style = "height: 0";
     indexMenu();
     aboutMenu();
     projectMenu();
