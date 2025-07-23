@@ -14,7 +14,7 @@ function components() {
     let footer = `
         <div id="footer">
             <div id="separator">
-                <p class="normal-text" id="separator-text">ACCESSIBLE BOLD EMPATHETIC STUDENT DESIGNER DEVELOPER ACCESSIBLE BOLD EMPATHETIC STUDENT DESIGNER DEVELOPER ACCESSIBLE BOLD EMPATHETIC STUDENT DESIGNER DEVELOPER ACCESSIBLE BOLD EMPATHETIC STUDENT DESIGNER DEVELOPER ACCESSIBLE BOLD EMPATHETIC STUDENT DESIGNER DEVELOPER ACCESSIBLE BOLD EMPATHETIC STUDENT DESIGNER</p>
+                <p class="normal-text" id="separator-text">ACCESSIBLE BOLD EMPATHETIC STUDENT DESIGNER DEVELOPER ACCESSIBLE BOLD EMPATHETIC STUDENT DESIGNER DEVELOPER ACCESSIBLE BOLD EMPATHETIC STUDENT DESIGNER DEVELOPER ACCESSIBLE BOLD EMPATHETIC STUDENT DESIGNER DEVELOPER ACCESSIBLE BOLD EMPATHETIC STUDENT DESIGNER DEVELOPER ACCESSIBLE BOLD EMPATHETIC STUDENT DESIGNER DEVELOPER </p>
             </div>
             <div id="footer-main">
                 <img id="footer-blob" src="./assets/graphc.png">
@@ -252,7 +252,7 @@ function localStorageProjects() {
     }
 }
 function toResume() {
-    window.open("./assets/resume.pdf", "_self");
+    window.open("./assets/resume.pdf", "_blank");
 }
 
 

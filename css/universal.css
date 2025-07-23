@@ -224,13 +224,26 @@ body {
 #separator {
     overflow: hidden;
     white-space: nowrap;
+    box-sizing: border-box;
     background: black;
-    width: 100%;
+    width: 110vw;
+    padding-left: 5vw;
     margin-top: 0;
 }
 #separator-text {
     color: white;
+    display: inline-block;
+    padding-left: 0%;
+    animation: scroll-left 15s linear infinite;
 }
+@keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 #footer-main {
     width: 95vw;
     position: relative;
