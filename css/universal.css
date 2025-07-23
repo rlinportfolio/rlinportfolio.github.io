@@ -400,6 +400,8 @@ body {
 }
 .final {
     background: white;
+    padding-bottom: 10vh;
+    border-bottom: none;
 }
 .final-text {
     padding-right: 5vw;

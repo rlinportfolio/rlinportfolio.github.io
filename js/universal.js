@@ -162,10 +162,10 @@ function projectMenu() {
             height = (height/window.innerHeight) * 100;
             var distanceFromBottom = height - scrollTop - 100;
             console.log(distanceFromBottom);
-            if (distanceFromBottom > 110) {
+            if (distanceFromBottom > 120) {
                 document.getElementById(menu).style = "background: white;";
             }
-            if (distanceFromBottom > 100 && distanceFromBottom <= 110) {
+            if (distanceFromBottom > 100 && distanceFromBottom <= 120) {
                 console.log("h");
                 document.getElementById(menu).style = "background: transparent; opacity: 100; pointer-events: all;";
                 document.getElementById("menu-bottom").style = "opacity: 100; pointer-events: all;";
