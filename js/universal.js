@@ -228,7 +228,6 @@ function toLink(link) {
     document.getElementById("menu").style = "background: transparent";
     setTimeout(() => {
         window.open(link, "_self");
-        transitioning = false;
     }, 700);
 }
 function toAbout() {
@@ -264,6 +263,7 @@ function forceCloseTransition() {
 window.onload = function() {
     components();
     setTimeout(() => {
+        transitioning = false;
         document.getElementById("transition").style = "height: 0";
     }, 200);
     indexMenu();
