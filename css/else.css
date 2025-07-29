@@ -59,10 +59,10 @@
 }
 
 #stylecomponents {
+}
+#projects-imgs {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
-
 }
 #stylecomponents-left {
     width: 60vw;
@@ -73,6 +73,10 @@
 #components-img, #pimg {
     width: 100%;
 }
+#components-img {
+    margin-top: 5vh;
+}
 #styles-img {
     width: 20vw;
+    height: auto;
 }
