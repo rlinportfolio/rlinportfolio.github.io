@@ -172,7 +172,8 @@ body {
 .projects-number {
     color: var(--lighthover);
     transition: 0.2s;
-    margin-left: 5vw;
+    margin-right: 4vw;
+    z-index: 10;
 }
 .projects-number:hover {
     color: var(--darkhover);
