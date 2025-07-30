@@ -416,3 +416,50 @@ body {
 
 }
 
+.nomobile {
+    display: none;
+}
+#no-mobile-text {
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    .no-mobile {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        left: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--dark);
+        z-index: 1000;
+    }
+    #no-mobile-text {
+        display: flex;
+        color: white;
+    }
+    .title-text {
+        font-size: 15vw;
+        height: 16vw;
+        letter-spacing: -0.08em;
+    }
+
+    .normal-text {
+        font-size: 7vw;
+        line-height: 9vw;
+    }
+
+    .header-text {
+        font-size: 6vw;
+        letter-spacing: -0.06em;
+        margin-left: -.5vw;
+        line-height: 6vw;
+    }
+
+
+
+
+}
