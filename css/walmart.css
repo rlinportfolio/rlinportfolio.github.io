@@ -44,6 +44,26 @@
     font-weight: 700;
 }
 
+@media only screen and (max-width: 1024px) {
+    #personas {
+        flex-direction: column;
+    }
+    #personas-img {
+        width: 100%;
+    }
+    .m-section-imgs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .m-img {
+        width: 100%;
+        margin-bottom: 2.5vh;
+    }
 
+
+
+
+}
 
 

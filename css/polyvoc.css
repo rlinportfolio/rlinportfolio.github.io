@@ -42,3 +42,32 @@
     width: 40vw;
 }
  
+@media only screen and (max-width: 1024px) {
+    #research-personas {
+        flex-direction: column;
+        align-items: center;
+    }
+    #persona1, #persona2 {
+        width: 100%;
+        margin-bottom: 5vh;
+    }
+    .thumbnails {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tn-each {
+        width: 100%;
+    }
+    .tn-img {
+        width: 100%;
+        margin-bottom: 5vh;
+    }
+    #sgc-images {
+        flex-direction: column;
+        align-items: center;
+    }
+    #sgc-img {
+        width: 100%;
+        margin-bottom: 5vh;
+    }
+}

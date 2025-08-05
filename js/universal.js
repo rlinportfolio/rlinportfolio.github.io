@@ -234,7 +234,7 @@ function toAbout() {
     window.open("./about.html", "_self");
 }
 function toProjects() {
-    if (window.location.pathname.includes("index")) {
+    if (window.location.pathname.includes("index") || window.location.pathname === "/") {
         document.getElementById('projects-main').scrollIntoView({behavior: "smooth"});
     }
     else {
@@ -260,15 +260,19 @@ function forceCloseTransition() {
     }
 }
 
+var width = window.screen.width;
+
 window.onload = function() {
     components();
     setTimeout(() => {
         transitioning = false;
         document.getElementById("transition").style = "height: 0";
     }, 200);
-    indexMenu();
-    aboutMenu();
-    projectMenu();
+    if (width >= 1024) {
+        indexMenu();
+        aboutMenu();
+        projectMenu();
+    }
     localStorageProjects()
     document.getElementById("project-number-1").classList.add("activelist");
 }
@@ -298,13 +302,13 @@ document.addEventListener('mouseover', function(e) {
                 document.getElementById("followmouse").style = "color: white; background: var(--purple); transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
             }
             if (hoveredElement.innerHTML == "Walmart" || hoveredElement.innerHTML == "02") {
-                document.getElementById("followmouse").style = "color: white; background: #0071CE; transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
+                document.getElementById("followmouse").style = "color: white; background: var(--walmartblue); transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
             }
             if (hoveredElement.innerHTML == "Polyvoc" || hoveredElement.innerHTML == "03") {
-                document.getElementById("followmouse").style = "color: white; background: #FF6200; transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
+                document.getElementById("followmouse").style = "color: white; background: var(--polyvocorange); transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
             }
             if (hoveredElement.innerHTML == "Messages" || hoveredElement.innerHTML == "04") {
-                document.getElementById("followmouse").style = "color: white; background: #4EB0FF; transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
+                document.getElementById("followmouse").style = "color: white; background: var(--messagesblue); transform: rotate(0deg); width: auto; height: 5vw; border: 1px solid var(--dark)";
             }
             if (hoveredElement.innerHTML == "Email") {
                 document.getElementById("followmouse").innerHTML = "rlin@unc.edu&nbsp;&nbsp;&nbsp;[Click to Copy]";

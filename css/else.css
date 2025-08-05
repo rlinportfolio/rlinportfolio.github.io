@@ -80,3 +80,37 @@
     width: 20vw;
     height: auto;
 }
+
+@media only screen and (max-width: 1024px) {
+    #ca {
+        flex-direction: column;
+    }
+    #ca-left {
+        height: auto;
+    }
+    #ca-img {
+        width: 90%;
+        height: auto;
+    }
+    #research-personas {
+        flex-direction: column;
+    }
+    #persona1, #persona2 {
+        margin-bottom: 5vh;
+        width: 100%;
+    }
+    
+    #projects-imgs {
+        flex-direction: column;
+        width: 100%;
+        justify-content: start;
+    }
+    #stylecomponents-left {
+        width: 130vw;
+    }
+    #components-img, #styles-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+}

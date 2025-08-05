@@ -80,3 +80,29 @@
 #mv-section {
     margin-right: 2.5vw;
 }
+
+@media only screen and (max-width: 1024px) {
+    #ca {
+        flex-direction: column
+    }
+    #ca-left {
+        justify-content: start;
+        height: auto;
+    }
+    #ca-img {
+        width: 90%;
+        height: auto;
+    }
+    #research-personas {
+        flex-direction: column;
+    }
+    #persona1, #persona2 {
+        margin-bottom: 5vh;
+        width: 100%;
+    }
+
+    #mobileview-top {
+        flex-direction: column;
+    }
+    
+}

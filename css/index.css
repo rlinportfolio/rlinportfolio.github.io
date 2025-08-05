@@ -59,6 +59,51 @@
 }
 
 
-
+@media only screen and (max-width: 1024px) {
+    #landing {
+        width: 125vw;
+        padding: 0;
+        padding-left: 5vw;
+        margin: 0;
+        height: 100vh;
+    }
+    #landing-name{
+        display: block;
+        animation: none;
+        margin: 0;
+    }
+    #landing-bottom {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    #landing-top-text {
+        margin-top: 50px;
+    }
+    #landing-links {
+        margin: 0;
+        padding: 0;
+        justify-content: start;
+        margin-top: 50px;
+        padding-right: 70px;
+    }
+    #landing-intro {
+        width: 100%;
+        border: none;
+        height: 300px;
+    }
+    #landing-blurb {
+        filter: blur(175px) saturate(175%);
+        width: 70vw;
+        top: 10vh;
+        right: 15vw;
+        animation: rotation 10s infinite;
+        z-index: -1;
+        position: absolute;
+    }
+    #landing-linkedin {
+        margin-right: 150px;
+    }
+}
 
 
