@@ -1,33 +1,114 @@
 <!DOCTYPE html>
-<html lang="en-us">
-    <head>
-        <meta charset="utf-8">
-        <title>RLIN | Index</title>
-        <link rel="icon" href="./assets/tabicon.png">
-        <link rel="stylesheet" href="./css/universal.css">
-        <link rel="stylesheet" href="./css/index.css">
-        <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
-        <script src="./js/universal.js"></script>
-    </head>
-    <body>
-        <div class="normal-text" id="followmouse">→</div>
-        <div id="transition"></div>
-        <header id="menu-main"></header>
-        <div id="landing">
-            <img src="./assets/graphc.png" id="landing-blurb">
-            <p class="normal-text cssanimation open sequence" id="landing-top-text">Portfolio 2026</p>
-            <div id="landing-bottom">
-                <p class="normal-text" id="landing-intro">Hi! I’m Richard, a UI/UX designer committed to accessible, bold choices grounded in empathy.</p>
-                <p class="cssanimation open sequence title-text" id="landing-name">Richard Lin</p>
-                <div id="landing-links">
-                    <a class="normal-text little-link" id="landing-linkedin" target="_blank" href="https://www.linkedin.com/in/richardlin4375/">LinkedIn</a>
-                    <a class="normal-text little-link" id="landing-email" target="_blank" onclick="emailClick()">Email</a>
-                </div>       
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Lin - Home</title>
+    <link rel="icon" href="./assets/tab-icon.png">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/global.js" defer></script>
+    <script src="./js/cursor.js" defer></script>
+    <script src="./js/mouse-effect.js" defer></script>
+    <script src="./js/page-transition.js" defer></script>
+</head>
+<body>
+    <header>
+        <a class="text header-home" id="header-text" href="./index.html">Portfolio 2026</a>
+        <button id="menu-button" type="button" aria-label="Open menu" aria-controls="menu-popup" aria-expanded="false">
+            <div id="menu-button-line-1"></div>
+            <div id="menu-button-line-2"></div>
+        </button>
+    </header>
+
+    <aside id="menu-popup" aria-hidden="true">
+        <nav id="menu-navigation" aria-label="Main navigation">
+            <a class="menu-link" href="#">Home</a>
+            <a class="menu-link" href="./about.html">About</a>
+            <a class="menu-link" href="./assets/2026-Resume-Richard-Lin.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a class="menu-link" href="https://www.linkedin.com/in/richardlin4375/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </nav>
+        <section id="menu-projects" aria-labelledby="menu-projects-title">
+            <p id="menu-projects-title">Projects</p>
+            <nav id="menu-project-list" aria-label="Projects">
+                <a class="menu-project" href="./keybank.html"><span>01</span>KeyBank KBBO+</a>
+                <a class="menu-project" href="./adelphi-media.html"><span>02</span>Adelphi Media</a>
+                <a class="menu-project" href="./walmart.html"><span>03</span>Walmart</a>
+                <a class="menu-project" href="./echo-dot.html"><span>04</span>Amazon Echo Dot</a>
+            </nav>
+        </section>
+    </aside>
+
+    <section id="about-popup" aria-hidden="true" aria-labelledby="about-popup-title">
+        <button id="about-close" type="button" aria-label="Close About popup">
+            <span class="about-close-line about-close-line-1"></span>
+            <span class="about-close-line about-close-line-2"></span>
+        </button>
+        <div id="about-panel">
+            <h1 id="about-popup-title">About</h1>
+            <div id="about-content">
+                <img id="about-image" src="./assets/about-image.jpg" alt="Richard Lin smiling in front of a brick wall">
+                <div id="about-copy">
+                    <p>In 6th grade, I built my own desktop computer solely to be able to run Fortnite faster.</p>
+                    <p>Since this first introduction to learning about technology, I've spent the following years exploring web design and eventually fell in love with the more creative side---especially how precise and accessible design can completely transform someone's experience, even beyond digital interfaces.</p>
+                    <p>Today, I'm a student at the University of North Carolina at Chapel Hill, studying Information Science with a focus in HCI Design, and minoring in Media &amp; Journalism for interactive media. I plan on graduating in May 2027.</p>
+                    <p>Outside of design, you'll find me watching (and analyzing) (and reading about) movies, playing guitar and piano, listening to 2010s music, gaming with friends, or going on a walk.</p>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div id="projects-main"></div>
-        <footer id="footer"></footer>
+    <main>
+        <div id="main-content">
+            <div id="main-top">
+                <div id="main-links">
+                    <a class="text main-link" id="about-link" href="./about.html">About</a>
+                    <a class="text main-link" id="resume-link" href="./assets/2026-Resume-Richard-Lin.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                    <a class="text main-link" id="linkedin-link" href="https://www.linkedin.com/in/richardlin4375/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+                <div id="main-title">
+                    <div id="vline"></div>
+                    <img src="./assets/signature.png" id="main-signature">
+                    <p class="text" id="main-subtitle">Richard Lin, <span style="color: var(--primary)">Product Designer</span></p>
+                </div>
+            </div>
+            <div id="main-work">
+                <div id="hline"></div>
+                <a class="study" id="study-key" href="./keybank.html">
+                    <p class="text study-number">01</p>
+                    <div class="study-graphic" id="study-graphic-key">
+                        <img class="study-icon" id="study-icon-key" src="./assets/key.png">
+                    </div>
+                    <p class="text study-title">KeyBank KBBO+</p>
+                </a>
+                <a class="study" id="study-adelphi" href="./adelphi-media.html">
+                    <p class="text study-number">02</p>
+                    <div class="study-graphic" id="study-graphic-key">
+                        <img class="study-icon" id="study-icon-adelphi" src="./assets/adelphi.png">
+                    </div>
+                    <p class="text study-title">Adelphi Media</p>
+                </a>
+                <a class="study" id="study-walmart" href="./walmart.html">
+                    <p class="text study-number">03</p>
+                    <div class="study-graphic" id="study-graphic-key">
+                        <img class="study-icon" id="study-icon-walmart" src="./assets/walmart.png">
+                    </div>
+                    <p class="text study-title">Walmart</p>
+                </a>
+                <a class="study" id="study-echo" href="./echo-dot.html">
+                    <p class="text study-number">04</p>
+                    <div class="study-graphic" id="study-graphic-key">
+                        <img class="study-icon" id="study-icon-echo" src="./assets/echo.png">
+                    </div>
+                    <p class="text study-title">Amazon Echo Dot</p>
+                </a>
+            </div>
 
-    </body>
+
+        </div>
+    </main>
+    
+
+
+</body>
 </html>

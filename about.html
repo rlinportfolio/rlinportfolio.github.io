@@ -1,35 +1,73 @@
 <!DOCTYPE html>
-<html lang="en-us">
-    <head>
-        <meta charset="utf-8">
-        <title>RLIN | About</title>
-        <link rel="icon" href="./assets/tabicon.png">
-        <link rel="stylesheet" href="./css/universal.css">
-        <link rel="stylesheet" href="./css/about.css">
-        <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
-        <script src="./js/universal.js"></script>
-    </head>
-    <body>
-        <div class="normal-text" id="followmouse">→</div>
-        <div id="transition"></div>
-        <header id="menu-main"></header>
-        <div id="about">
-            <img id="about-pic" src="./assets/about-image.jpg">
-            <div id="about-right">
-                <p class="title-text cssanimation open sequence" id="about-title">ABOUT</p>
-                <p class="normal-text" id="about-text">In 6th grade, I built my own desktop computer so I could run Fortnite faster. 
-                <br><br>
-                This original goal to simply be better at a video game was my introduction to technology, and a year later, I stumbled upon a Khan Academy course in web design. 
-                <br><br>
-                Since then, I've spent the following years learning web design and eventually fell in love with the more creative side of technology---especially how bold and empathetically accessible design can completely transform someone’s experiences with a website, app, or game.
-                <br><br>
-                Today, I’m a student at the University of North Carolina at Chapel Hill, studying Information Science with a focus in Human-Computer Interaction Design, and minoring in Media & Journalism for interactive media. I plan on graduating in May 2027 to pursue a career in UI/UX design.
-                <br><br>
-                Outside of design, you’ll be able to find me watching (and analyzing) movies, playing guitar, listening to early 2010s music, gaming with friends, or going on a walk to quiet my mind.</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Lin - About</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <script src="./js/global.js" defer></script>
+    <script src="./js/mouse-effect.js" defer></script>
+    <script src="./js/page-transition.js" defer></script>
+</head>
+<body class="about-page">
+    <header>
+        <a class="text header-home" id="header-text" href="./index.html">Portfolio 2026</a>
+        <button id="about-menu-button" type="button" aria-label="Open menu">
+            <span id="about-menu-button-line-1"></span>
+            <span id="about-menu-button-line-2"></span>
+        </button>
+    </header>
+
+    <aside id="menu-popup" aria-hidden="true">
+        <nav id="menu-navigation" aria-label="Main navigation">
+            <a class="menu-link" href="./index.html">Home</a>
+            <a class="menu-link" href="./about.html">About</a>
+            <a class="menu-link" href="./assets/2026-Resume-Richard-Lin.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a class="menu-link" href="https://www.linkedin.com/in/richardlin4375/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </nav>
+        <section id="menu-projects" aria-labelledby="menu-projects-title">
+            <p id="menu-projects-title">Projects</p>
+            <nav id="menu-project-list" aria-label="Projects">
+                <a class="menu-project" href="./keybank.html"><span>01</span>KeyBank KBBO+</a>
+                <a class="menu-project" href="./adelphi-media.html"><span>02</span>Adelphi Media</a>
+                <a class="menu-project" href="./walmart.html"><span>03</span>Walmart</a>
+                <a class="menu-project" href="./echo-dot.html"><span>04</span>Amazon Echo Dot</a>
+            </nav>
+        </section>
+    </aside>
+
+    <section id="about-popup" aria-hidden="true" aria-labelledby="about-popup-title">
+        <button id="about-close" type="button" aria-label="Close About popup">
+            <span class="about-close-line about-close-line-1"></span>
+            <span class="about-close-line about-close-line-2"></span>
+        </button>
+        <div id="about-panel">
+            <h1 id="about-popup-title">About</h1>
+            <div id="about-content">
+                <img id="about-image" src="./assets/about-image.jpg" alt="Richard Lin smiling in front of a brick wall">
+                <div id="about-copy">
+                    <p>In 6th grade, I built my own desktop computer solely to be able to run Fortnite faster.</p>
+                    <p>Since this first introduction to learning about technology, I've spent the following years exploring web design and eventually fell in love with the more creative side---especially how precise and accessible design can completely transform someone's experience, even beyond digital interfaces.</p>
+                    <p>Today, I'm a student at the University of North Carolina at Chapel Hill, studying Information Science with a focus in HCI Design, and minoring in Media &amp; Journalism for interactive media. I plan on graduating in May 2027.</p>
+                    <p>Outside of design, you'll find me watching (and analyzing) (and reading about) movies, playing guitar and piano, listening to 2010s music, gaming with friends, or going on a walk.</p>
+                </div>
             </div>
         </div>
+    </section>
 
-
-        <footer id="footer"></footer>
-    </body>
+    <main id="about-page-content">
+        <h1 id="about-page-title">About</h1>
+        <div id="about-page-body">
+            <img id="about-page-image" src="./assets/about-image.jpg" alt="Richard Lin smiling in front of a brick wall">
+            <div id="about-page-copy">
+                <p>In 6th grade, I built my own desktop computer solely to be able to run Fortnite faster.</p>
+                <p>Since this first introduction to learning about technology, I've spent the following years exploring web design and eventually fell in love with the more creative side---especially how precise and accessible design can completely transform someone's experience, even beyond digital interfaces.</p>
+                <p>Today, I'm a student at the University of North Carolina at Chapel Hill, studying Information Science with a focus in HCI Design, and minoring in Media &amp; Journalism for interactive media. I plan on graduating in May 2027.</p>
+                <p>Outside of design, you'll find me watching (and analyzing) (and reading about) movies, playing guitar and piano, listening to 2010s music, gaming with friends, or going on a walk.</p>
+            </div>
+        </div>
+    </main>
+</body>
+    <script src="./js/cursor.js" defer></script>
 </html>

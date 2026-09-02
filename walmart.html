@@ -1,161 +1,280 @@
 <!DOCTYPE html>
-<html lang="en-us">
-    <head>
-        <meta charset="utf-8">
-        <title>RLIN | Walmart</title>
-        <link rel="icon" href="./assets/tabicon.png">
-        <link rel="stylesheet" href="./css/universal.css">
-        <link rel="stylesheet" href="./css/walmart.css">
-        <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
-        <script src="./js/universal.js"></script>
-    </head>
-    <body>
-        <div class="normal-text" id="followmouse">→</div>
-        <div id="transition"></div>
-        <header id="menu-main"></header>
-        <div class="projects-landing projects-section" id="landing">
-            <img class="landing-blob" id="walmart-blob" src="./assets/Walmart/walmartblob.png">
-            <p class="title-text projects-landing-title cssanimation open sequence" id="landing-title">Walmart</p>
-            <p class="normal-text projects-landing-text" id="landing-description">An accessibility integration and simplified interface to assist elderly online shoppers.</p>
-        </div>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Richard Lin - Walmart</title>
+	<link rel="icon" href="./assets/tab-icon.png">
+	<link rel="stylesheet" href="./css/global.css">
+	<link rel="stylesheet" href="./css/walmart.css">
+	<script src="./js/global.js" defer></script>
+	<script src="./js/cursor.js" defer></script>
+	<script src="./js/mouse-effect.js" defer></script>
+	<script src="./js/page-transition.js" defer></script>
+</head>
+<body class="walmart-page">
+	<header>
+		<a class="text header-home" id="header-text" href="./index.html">Portfolio 2026</a>
+		<button id="menu-button" type="button" aria-label="Open menu" aria-controls="menu-popup" aria-expanded="false">
+			<div id="menu-button-line-1"></div>
+			<div id="menu-button-line-2"></div>
+		</button>
+		<div id="scroll-progress" aria-hidden="true"></div>
+	</header>
 
-        <div class="section projects-overview projects-section">
-            <p class="header-text">PROJECT OVERVIEW</p>
-            <p class="normal-text projects-overview-description">The Walmart Easy.Access is an accessibility integration that was proposed to be added onto the current Walmart e-commerce website. It would  provide accessibility options to users (particularly elderly users) on the Walmart website and also come with a built-in and toggleable simplified redesigned interface to help those elderly users navigate the site more easily. Based on current research and data, I developed mock-ups of an accessibility integration called Easy.Access that would work alongside the Walmart website. </p>
-            <p class="normal-text projects-overview-problem"><span style="font-weight: 700">Problem</span> : With an 18% increase in technology ownership among elderly individuals in the last 4 years and 57% of elderly individuals over the age of 65 reporting finding online shopping sites difficult to navigate, along with individuals over the age of 65 having the highest discretionary income available out of any generation, these elderly shoppers are an underrepresented market that could potentially serve as a large customer base for Walmart. </p>
-            <p class="normal-text projects-overview-goal"><span style="font-weight: 700">Goal</span> :  Give elderly shoppers better access to the online Walmart site to help Walmart generate more revenue.  </p>
-            <p class="normal-text projects-overview-context">This project was conducted as a part of the capstone project of the Accenture Learning 2 Lead internship. We chose an Accenture diamond client, and proposed a solution to a problem we noticed they were facing.</p>
-            <div class="projects-overview-details">
-                <div class="projects-overview-detail projects-overview-details-role">
-                    <p class="normal-text projects-overview-details-header">ROLE</p>
-                    <p class="normal-text projects-overview-details-description">Solo UX Designer</p>
-                </div>
-                <div class="projects-overview-detail projects-overview-details-timeline">
-                    <p class="normal-text projects-overview-details-header">TIMELINE</p>
-                    <p class="normal-text projects-overview-details-description">June - August 2024 (2 months)</p>
-                </div>
-                <div class="projects-overview-detail projects-overview-details-tools">
-                    <p class="normal-text projects-overview-details-header">TOOLS</p>
-                    <p class="normal-text projects-overview-details-description">Figma</p>
-                </div>
-            </div>
-        </div>        
+	<aside id="menu-popup" aria-hidden="true">
+		<nav id="menu-navigation" aria-label="Main navigation">
+			<a class="menu-link" href="./index.html">Home</a>
+			<a class="menu-link" href="./about.html">About</a>
+			<a class="menu-link" href="./assets/2026-Resume-Richard-Lin.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+			<a class="menu-link" href="https://www.linkedin.com/in/richardlin4375/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+		</nav>
+		<section id="menu-projects" aria-labelledby="menu-projects-title">
+			<p id="menu-projects-title">Projects</p>
+			<nav id="menu-project-list" aria-label="Projects">
+				<a class="menu-project" href="./keybank.html"><span>01</span>KeyBank KBBO+</a>
+				<a class="menu-project" href="./adelphi-media.html"><span>02</span>Adelphi Media</a>
+				<a class="menu-project" href="./walmart.html"><span>03</span>Walmart</a>
+				<a class="menu-project" href="./echo-dot.html"><span>04</span>Amazon Echo Dot</a>
+			</nav>
+		</section>
+	</aside>
 
-        <div class="projects-section" id="research">
-            <p class="header-text">Research</p>
-            <p class="normal-text" id="research-text">
-                Walmart generates <span style="font-weight: 700; color: var(--walmartblue)">$441 billion dollars annually</span> from their in-person stores.
-                <br><br><span style="font-weight: 700; color: var(--walmartblue)">20%</span> of these shoppers are <span style="font-weight: 700; color: var(--walmartblue)">above the age of 65</span>.
-                <br><br><span style="font-weight: 700; color: var(--walmartblue)">Over 1 in 5 Americans over the age of 65 are not driving</span>, meaning they <span style="font-weight: 700; color: var(--walmartblue)">aren’t able to get to in-person stores</span> by themselves. 
-                <br><br>With Walmart’s current accessibility layout, some of these potential customers cannot fully take advantage of the website. 
-                <br><br><br>
-                This means that <span style="font-weight: 700; color: var(--walmartblue)">Walmart could be missing out on upwards of $22 billion dollars annually</span> from this demographic alone. 
-            </p>
-            <div id="personas">
-                <img class="pimg" id="personas-img" src="./assets/Walmart/personas.png" onclick="window.open('./assets/Walmart/personas.png', '_blank')">
-                <p class="normal-text">User personas, based on Walmart’s elderly shopper demographics.</p>
-            </div>
-            <p class="normal-text tab-message">[Click the image to open in a new tab]</p>
-        </div>
+	<section id="about-popup" aria-hidden="true" aria-labelledby="about-popup-title">
+		<button id="about-close" type="button" aria-label="Close About popup">
+			<span class="about-close-line about-close-line-1"></span>
+			<span class="about-close-line about-close-line-2"></span>
+		</button>
+		<div id="about-panel">
+			<h1 id="about-popup-title">About</h1>
+			<div id="about-content">
+				<img id="about-image" src="./assets/about-image.jpg" alt="Richard Lin smiling in front of a brick wall">
+				<div id="about-copy">
+					<p>In 6th grade, I built my own desktop computer solely to be able to run Fortnite faster.</p>
+					<p>Since this first introduction to learning about technology, I've spent the following years exploring web design and eventually fell in love with the more creative side---especially how precise and accessible design can completely transform someone's experience, even beyond digital interfaces.</p>
+					<p>Today, I'm a student at the University of North Carolina at Chapel Hill, studying Information Science with a focus in HCI Design, and minoring in Media &amp; Journalism for interactive media. I plan on graduating in May 2027.</p>
+					<p>Outside of design, you'll find me watching (and analyzing) (and reading about) movies, playing guitar and piano, listening to 2010s music, gaming with friends, or going on a walk.</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
-        <div class="projects-section" id="solution">
-            <p class="header-text">The solution: <span style="color: var(--purple)">Easy</span>.<span style="color: var(--purple)">Access</span></p>
-            <p class="normal-text">
-                Easy.Access is an accessibility integration to help improve shopping experiences for elderly users and those with physical disabilities or impairments. It will also be compliant with accessibility guidelines such as WCAG 2.2, the ADA, Section 508, and AODA.
-                <br><br>
-                Features:
-                <br>◈ High contrast mode
-                <br>◈ Color/vibrancy controls
-                <br>◈ Font/text size controls
-                <br>◈ Voice commands
-                <br>◈ Cursor size
-                <br>◈ Ability to purchase items through phone without needing to click or scroll often
-                <br>◈ Easy Access Mode, a completely revamped interface designed for simple user and navigation
-                <br><br>General Design Goals: Larger text, simpler navigation, larger content, cleaner (less cluttered) feel.
-            </p>
-        </div>
-        <div class="projects-section" id="m">
-            <p class="normal-text tab-message" id="mockups-tabm">[Click each image to open in a new tab]</p>
-            <p class="header-text header-right-text">Mockups</p>
-            <div class="m-section">
-                <p class="normal-text" id="m-header">Accessibility Options Panel</p>
-                <div class="m-section-imgs">
-                    <div id="m-section-mockup">
-                        <img class="pimg m-img" src="./assets/Walmart/1-original.png" onclick="window.open('./assets/Walmart/1-original.png', '_blank')">
-                        <p class="normal-text">Before Adding Accessibility Options</p>
-                    </div>
-                    <div id="m-section-mockup">
-                        <img class="pimg m-img" src="./assets/Walmart/1-mockup.png" onclick="window.open('./assets/Walmart/1-mockup.png', '_blank')">
-                        <p class="normal-text">After Adding Accessibility Options</p>
-                    </div>
-                </div>
-            </div>
-            <div class="m-section">
-                <p class="normal-text" id="m-header">Easy Access Mode : Homepage Redesign</p>
-                <div class="m-section-imgs">
-                    <div id="m-section-mockup">
-                        <img class="pimg m-img" src="./assets/Walmart/1-original.png" onclick="window.open('./assets/Walmart/1-original.png', '_blank')">
-                        <p class="normal-text">Original Homescreen</p>
-                    </div>
-                    <div id="m-section-mockup">
-                        <img class="pimg m-img" src="./assets/Walmart/2-mockup.png" onclick="window.open('./assets/Walmart/2-mockup.png', '_blank')">
-                        <p class="normal-text">Easy Access Mode : Redesigned Homepage</p>
-                    </div>
-                </div>
-            </div>
-            <div class="m-section">
-                <p class="normal-text" id="m-header">Easy Access Mode : Flash Deals Section</p>
-                <div class="m-section-imgs">
-                    <div id="m-section-mockup">
-                        <img class="pimg m-img" src="./assets/Walmart/3-original.png" onclick="window.open('./assets/Walmart/3-original.png', '_blank')">
-                        <p class="normal-text">Original Flash Deals Section</p>
-                    </div>
-                    <div id="m-section-mockup">
-                        <img class="pimg m-img" src="./assets/Walmart/3-mockup.png" onclick="window.open('./assets/Walmart/3-mockup.png', '_blank')">
-                        <p class="normal-text">Easy Access Mode : Redesigned Flash Deals Section</p>
-                    </div>
-                </div>
-            </div>
-            <div class="m-section">
-                <p class="normal-text" id="m-header">Easy Access Mode : Search Results Redesign</p>
-                <div class="m-section-imgs">
-                    <div id="m-section-mockup">
-                        <img class="pimg m-img" src="./assets/Walmart/4-original.png" onclick="window.open('./assets/Walmart/4-original.png', '_blank')">
-                        <p class="normal-text">Original Search Results Page</p>
-                    </div>
-                    <div id="m-section-mockup">
-                        <img class="pimg m-img" src="./assets/Walmart/4-mockup.png" onclick="window.open('./assets/Walmart/4-mockup.png', '_blank')">
-                        <p class="normal-text">Easy Access Mode : Redesigned Search Results Page</p>
-                    </div>
-                </div>
-            </div>
-            <div class="m-section">
-                <p class="normal-text" id="m-header">Awareness Message</p>
-                <div class="m-section-imgs">
-                    <div id="m-section-mockup">
-                        <img class="pimg m-img" src="./assets/Walmart/5-mockup.png" onclick="window.open('./assets/Walmart/5-mockup.png', '_blank')">
-                        <p class="normal-text">Shown during the first few months of Easy.Access being released to help spread awareness among users</p>
-                    </div>
-                </div>
-            </div>
-            
-
-        </div>
-        
-        <div class="projects-section final">
-            <p class="header-text final-header">Results</p>
-            <p class="normal-text final-text"><span style="color: var(--walmartblue)")>◈</span> Conducted secondary research, working with existing statistics to identify a lack in accessibility options, particularly for elderly users</p>
-            <p class="normal-text final-text"><span style="color: var(--walmartblue)")>◈</span> Designed and prototyped an accessibility integration, along with a simplified and accessible interface by applying WCAG, ADA, Section 508, and AODA guidelines on age-related impairments. Major improvements included increased design consistency and simplification, fewer needed interactions, and larger interface elements</p>
-            <p class="normal-text final-text"><span style="color: var(--walmartblue)")>◈</span> Proposed a marketing strategy to promote this integration through branded truck trailers, YouTube ads, and physical delivery packages</p>
-            <p class="normal-text final-text"><span style="color: var(--walmartblue)")>◈</span> If used to its fullest extent, the feature was expected to contribute over $20 billion in annual revenue to Walmart through expanding reach to an under-served market of customers </p>
-            <p class="normal-text final-text"><span style="color: var(--walmartblue)")>◈</span> Presented the final prototype and solution, winning 1st place in the 2024 Accenture Learning 2 Lead Summer Capstone Symposium </p>
-            
-            <p class="header-text final-header reflection-text">Reflection</p>
-            <p class="normal-text final-text"><span style="color: var(--walmartblue)")>◈</span> This project showed me the value of accessibility, that it’s not just a feature or element of design, but a necessity. Even seemingly small things, such as a couple pixel different in font size or spacing, can have a large influence on usability, especially for elderly users. </p>
-            <p class="normal-text final-text"><span style="color: var(--walmartblue)")>◈</span> If time allowed, I would have conducted direct interviews with older adults to gain a better grasp on their perspective, instead of relying mostly on secondary research. I would have also conducted usability tests to identify areas that need improvement, as small changes are always significant. </p>
-            <p class="normal-text final-text"><span style="color: var(--walmartblue)")>◈</span> Completing this project also reminds me that accessible design doesn’t mean making things dull or out-of-place to accommodate. It means keeping things both focused and aligned with user needs. </p>
-        </div>
-        <footer id="footer"></footer>
-
-    </body>
+	<main class="walmart-main">
+		<section class="walmart-panel">
+			<div class="walmart-left">
+				<p class="walmart-number">03</p>
+				<div class="walmart-details">
+					<img class="walmart-icon" src="./assets/walmart.png" alt="Walmart logo">
+					<h1 class="walmart-title">Walmart</h1>
+					<p class="walmart-subtitle">Adding an accessibility integration and simplified interface to assist elderly online shoppers.</p>
+				</div>
+			</div>
+			<img class="walmart-result" src="./assets/walmart/landing-walmart.png" alt="Walmart accessibility interface design">
+		</section>
+		<section class="walmart-info">
+			<div class="walmart-meta">
+				<div class="walmart-meta-group"><h2>Role</h2><p>Research Team + Sole Designer</p></div>
+				<div class="walmart-meta-group"><h2>Timeline</h2><p>Jun 2024 to Aug 2024 (2 months)</p></div>
+				<div class="walmart-meta-group"><h2>Tools</h2><p>Figma</p></div>
+			</div>
+			<div class="walmart-background">
+				<h2>Background</h2>
+				<p>This project proposed an accessibility integration (Easy.Access) onto the current Walmart e-commerce website. It provides accessibility options to users (particularly elderly users) on the Walmart website and also carries a toggleable, simplified interface to help those elderly users navigate the site more easily. <br><br>This was the capstone project of an Accenture internship. We chose a diamond client and proposed a solution to one of their problems.</p>
+			</div>
+		</section>
+		<section class="walmart-overview">
+			<div class="walmart-overview-label"><h2>Overview</h2></div>
+			<div class="walmart-overview-content">
+				<div class="walmart-overview-group"><h2>Problem</h2><p>1. 57% of individuals over the age of 65 report finding online shopping sites difficult to navigate.<br><br>2. With an 18% increase in technology ownership and the highest discretionary income available out of any other generation, this demographic is an underrepresented market that could potentially serve as a large customer base for Walmart.<br><br>3. This means Walmart could be losing out on billions of dollars in revenue each year. </p></div>
+				<div class="walmart-overview-group"><h2>User Goals</h2><p>1. Seamlessly search for items to buy. <br><br>2. Purchase items with as little friction as possible. <br><br>3. Receive support for their physical limitations.</p></div>
+				<div class="walmart-overview-group"><h2>Limitations</h2><p>• No access to real users or individuals in the target demographic for interviews or usability tests, so we had to rely on secondary research, which provided only a higher-level overview.<br><br>• Time constraints and limited access prevented us from taking the project further and testing the redesigns with real users. </p></div>
+				<div class="walmart-overview-results"><h2>Results</h2><p>1. Designed and prototyped an accessibility integration, along with a simplified and accessible interface by <strong>applying WCAG, ADA, Section 508, and AODA guidelines</strong> on age-related impairments.<br><br>2. Major improvements included increased design consistency and simplification, <strong>fewer needed interactions</strong>, and larger interface elements.<br><br>3. Proposed a marketing strategy to promote this integration through branded truck trailers, YouTube ads, and physical delivery packages.<br><br>4. Greatly <strong>reduced risk of accessibility-related lawsuits</strong>.<br><br>5. Estimated a potential <strong>upwards increase of $22B in annual revenue</strong>, if used to its fullest extent.</p></div>
+			</div>
+		</section>
+		<section class="walmart-research">
+			<div class="walmart-research-label"><h2>Research</h2></div>
+			<div class="walmart-research-content">
+				<div class="walmart-research-audience">
+					<h2>Target Audience</h2>
+					<p>Walmart shoppers over the age of 65.</p>
+				</div>
+				<div class="walmart-research-statistics">
+					<h2>Secondary Research Statistics</h2>
+					<div class="walmart-research-grid">
+						<div class="walmart-research-group"><h3>Disabilities</h3><ul><li>40% of individuals over the age of 65 have a disability.</li><li>Because cognitive disabilities affect decision-making and information-processing, and visual disabilities affect information-intake, these statistics are relevant to the website.</li><li>Roughly 30% of these individuals with a disability have a cognitive impairment.</li><li>About 13% of them have vision impairment or blindness.</li><li>And even more have disabilities, such as arthritis, that affect interactions with computers.</li></ul></div>
+						<div class="walmart-research-group"><h3>Driving</h3><ul><li>Over 1 in 5 Americans over the age of 65 are not driving, meaning they aren’t able to get to in-person stores by themselves.</li><li>This means about 20% of shoppers will rely on online sites or other people to fulfill their shopping needs.</li></ul></div>
+						<div class="walmart-research-group"><h3>Lawsuits</h3><ul><li>In 2025 alone, there were 8,600 ADA lawsuits filed, many of which were due to accessibility-related issues.</li><li>Without proper accessibility accommodations, Walmart would be at similar risk.</li></ul></div>
+						<div class="walmart-research-group"><h3>Missing Revenue</h3><ul><li>Walmart generates $441 billion annually from their in-person stores.</li><li>20% of these shoppers are above the age of 65.</li><li>With Walmart’s current accessibility layout, some of these potential customers cannot fully take advantage of the website.</li><li class="walmart-research-highlight">This means that Walmart could be missing out on upwards of $22 billion annually from this demographic alone.</li></ul></div>
+					</div>
+				</div>
+				<div class="walmart-research-detail walmart-competitive-analysis">
+					<div class="walmart-research-detail-copy">
+						<h2>Competitive Analysis</h2>
+						<p>Although current accessibility options exist, they all act as add-ons rather than a unified, integrated tool. As a result, these options would not provide the most streamlined experience for individuals with physical impairments and serve as bandages for accessibility issues rather than a tailored solution.</p>
+					</div>
+					<img src="./assets/walmart/companalysis.png" alt="AccessiBe, AudioEye, and UserWay accessibility logos">
+				</div>
+				<div class="walmart-research-detail walmart-user-personas">
+					<img src="./assets/walmart/user-personas.png" alt="Three user personas for Walmart accessibility research">
+					<div class="walmart-research-detail-copy">
+						<h2>User Personas</h2>
+						<p>We created personas to capture realistic situations that certain individuals may be in to inform future mockups.<br><br>With the variety of needs that this demographic has, inclusive design is critical.</p>
+					</div>
+				</div>
+				<div class="walmart-key-findings">
+					<h2>Key Findings</h2>
+					<p><span class="walmart-finding-negative">-</span> Many individuals over the age of 65 rely on the walmart.com website to fulfill their shopping needs. A lack of accessibility accommodations underrepresents a massive portion of Walmart’s customer base that could potentially be generating more revenue.<br><br><span class="walmart-finding-negative">-</span> The lack of accessibility accommodations also puts Walmart at risk for ADA-related lawsuits. Implementing a tool that would support people with disabilities is in Walmart’s best interest to mitigate potential losses.<br><br><span class="walmart-finding-negative">-</span> Currently, more inexpensive tools such as Accessibe, Userway, and Audio Eye act as slap-on fixes to issues that require a more holistic approach to accessibility. As a simple fix with varying results, it makes it difficult to build trust that would keep users returning to shop with Walmart.</p>
+				</div>
+			</div>
+		</section>
+		<section class="walmart-design-process">
+			<div class="walmart-design-process-label"><h2>Design Process</h2></div>
+			<div class="walmart-design-process-content">
+				<div class="walmart-design-process-intro">
+					<h2>The Solution – Easy.Access</h2>
+					<p>Easy.Access is a customized accessibility integration to help improve shopping experiences for elderly users and those with physical disabilities or impairments. It will be compliant with accessibility guidelines such as WCAG 2.2, the ADA, Section 508, and AODA.<br><br><strong>Features</strong><br><br>• High contrast mode<br>• Color/vibrancy controls<br>• Font/text size controls<br>• Voice commands<br>• Cursor size<br>• Ability to purchase items through phone without needing to click or scroll often<br>• Easy Access Mode, a completely revamped interface designed to be easier to use for individuals over the age of 65.<br><br><strong>General Easy.Access Mode Design Goals</strong> – Larger text, simpler navigation and more navigation options, larger content, clearer (less cluttered) feel, fewer needed clicks.</p>
+				</div>
+			</div>
+		</section>
+		<section class="walmart-final-mockup">
+			<div class="walmart-final-mockup-label"><h2>Final Mockup</h2></div>
+			<div class="walmart-final-mockup-content">
+				<h2>Accessibility Tool Integration</h2>
+				<div class="walmart-final-mockup-images">
+					<div class="walmart-final-mockup-image-group">
+						<p>Original</p>
+						<img src="./assets/walmart/1-original.png" alt="Original Walmart website interface">
+					</div>
+					<div class="walmart-final-mockup-image-group">
+						<p>Mockup</p>
+						<img src="./assets/walmart/1-mockup.png" alt="Walmart website interface with Easy.Access integration">
+					</div>
+				</div>
+				<ul class="walmart-final-mockup-features">
+					<li>High contrast mode</li>
+					<li>Color/vibrancy controls</li>
+					<li>Font/text size controls</li>
+					<li>Voice commands</li>
+					<li>Cursor size</li>
+					<li>Ability to purchase items through phone without needing to click or scroll often</li>
+					<li>Easy Access Mode, a completely revamped interface designed to be easier to use for individuals over the age of 65.</li>
+				</ul>
+				<div class="walmart-final-mockup-variation">
+					<h2>Easy.Access Mode – Homepage</h2>
+					<div class="walmart-final-mockup-images">
+						<div class="walmart-final-mockup-image-group">
+							<p>Original</p>
+							<img src="./assets/walmart/1-original.png" alt="Original Walmart homepage">
+						</div>
+						<div class="walmart-final-mockup-image-group">
+							<p>Mockup</p>
+							<img src="./assets/walmart/2-mockup.png" alt="Walmart Easy.Access Mode homepage mockup">
+						</div>
+					</div>
+					<ul class="walmart-final-mockup-features">
+						<li>Enlarged header for clearer scanning.</li>
+						<li>Minimal search bar similar to search engines creates a sense of familiarity.</li>
+						<li>Voice command option allows users to search without as many inputs.</li>
+						<li>Button to scroll to the next section prevents need for scrolling.</li>
+					</ul>
+				</div>
+				<div class="walmart-final-mockup-variation">
+					<h2>Easy.Access Mode – Flash Deals</h2>
+					<div class="walmart-final-mockup-images">
+						<div class="walmart-final-mockup-image-group">
+							<p>Original</p>
+							<img src="./assets/walmart/3-original.png" alt="Original Walmart Flash Deals section">
+						</div>
+						<div class="walmart-final-mockup-image-group">
+							<p>Mockup</p>
+							<img src="./assets/walmart/3-mockup.png" alt="Walmart Easy.Access Mode Flash Deals mockup">
+						</div>
+					</div>
+					<ul class="walmart-final-mockup-features">
+						<li>Enlarged header for clearer scanning.</li>
+						<li>Minimal search bar similar to search engines creates a sense of familiarity.</li>
+						<li>Voice command option allows users to search without as many inputs.</li>
+						<li>Button to scroll to the next section prevents need for scrolling.</li>
+					</ul>
+				</div>
+				<div class="walmart-final-mockup-variation">
+					<h2>Easy.Access Mode – Search Results</h2>
+					<div class="walmart-final-mockup-images">
+						<div class="walmart-final-mockup-image-group">
+							<p>Original</p>
+							<img src="./assets/walmart/4-original.png" alt="Original Walmart search results">
+						</div>
+						<div class="walmart-final-mockup-image-group">
+							<p>Mockup</p>
+							<img src="./assets/walmart/4-mockup.png" alt="Walmart Easy.Access Mode search results mockup">
+						</div>
+					</div>
+					<ul class="walmart-final-mockup-features">
+						<li>Larger button and selections to reduce misclicks.</li>
+						<li>Copy changes, such as “+ Add to Cart” instead of “+ Add” for clarity.</li>
+						<li>Fewer items per screen and option to show more reduces cognitive load.</li>
+						<li>Button for viewing next row of items reduces need for scrolling, which is easier for individuals with arthritis and other conditions.</li>
+					</ul>
+				</div>
+				<div class="walmart-final-mockup-variation">
+					<h2>Awareness Message</h2>
+					<img class="walmart-final-mockup-single-image" src="./assets/walmart/5-mockup.png" alt="Walmart Easy.Access Mode awareness message">
+					<ul class="walmart-final-mockup-features">
+						<li>Enlarged header for clearer scanning.</li>
+						<li>Minimal search bar similar to search engines creates a sense of familiarity.</li>
+						<li>Voice command option allows users to search without as many inputs.</li>
+						<li>Button to scroll to next section prevents need for scrolling.</li>
+					</ul>
+				</div>
+				<div class="walmart-final-mockup-variation">
+					<h2>Cataracts Comparison</h2>
+					<div class="walmart-final-mockup-images">
+						<div class="walmart-final-mockup-image-group">
+							<p>Original Homepage</p>
+							<img src="./assets/walmart/cataracts-original.png" alt="Original Walmart homepage viewed by a person with cataracts">
+						</div>
+						<div class="walmart-final-mockup-image-group">
+							<p>Easy.Access Mode Homepage</p>
+							<img src="./assets/walmart/cataracts-mockup.png" alt="Easy.Access Mode Walmart homepage viewed by a person with cataracts">
+						</div>
+					</div>
+					<p class="walmart-final-mockup-caption">Comparison of designs from the vision of an individual with cataracts.</p>
+				</div>
+			</div>
+		</section>
+		<section class="walmart-conclusion">
+			<div class="walmart-conclusion-label"><h2>Conclusion</h2></div>
+			<div class="walmart-conclusion-content">
+				<div class="walmart-reflection">
+					<h2>Reflection</h2>
+					<p>This project opened my eyes to the necessity of accessibility, and it’s potential for immense benefit to both users and the business. In conducting research, I found how many individuals truly suffer with cognitive, visual, and other physical impairments that limit their interactions with digital experiences.<br><br>It’s also showed me how to balance four critical worlds: visual aesthetics, user needs, accessibility, and business needs. Combining all of these pillars was challenging, but through this project and going forward, I have practiced applying them and iterating until I can meet them.</p>
+				</div>
+				<div class="walmart-conclusion-columns">
+					<div class="walmart-conclusion-column">
+						<h2>Next Steps</h2>
+						<p>1. If I had more time, I would have conducted direct interviews with older adults to gain a better grasp on their perspective, instead of relying mostly on secondary research.<br><br>2. I would have also conducted usability tests to identify gaps in the new design, such as difficulty with entry points or difficult completing tasks like adding an item to cart.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="walmart-footer">
+		<div class="walmart-footer-identity">
+			<div class="walmart-footer-identity-content">
+				<img src="./assets/signature.png" class="walmart-footer-signature" alt="Richard Lin signature">
+				<nav class="walmart-footer-links" aria-label="Footer navigation">
+					<a class="text main-link" href="./index.html">Home</a>
+					<a class="text main-link" href="./about.html">About</a>
+					<a class="text main-link" href="./assets/2026-Resume-Richard-Lin.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+					<a class="text main-link" href="https://www.linkedin.com/in/richardlin4375/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+				</nav>
+			</div>
+		</div>
+		<div class="walmart-footer-projects">
+			<a class="study" href="./keybank.html"><p class="text study-number">01</p><div class="study-graphic"><img class="study-icon" src="./assets/key.png" alt="KeyBank logo"></div><p class="text study-title">KeyBank KBBO+</p></a>
+			<a class="study" href="./adelphi-media.html"><p class="text study-number">02</p><div class="study-graphic"><img class="study-icon" src="./assets/adelphi.png" alt="Adelphi Media logo"></div><p class="text study-title">Adelphi Media</p></a>
+			<a class="study" href="./echo-dot.html"><p class="text study-number">04</p><div class="study-graphic"><img class="study-icon" src="./assets/echo.png" alt="Amazon Echo Dot logo"></div><p class="text study-title">Amazon Echo Dot</p></a>
+		</div>
+	</footer>
+</body>
 </html>

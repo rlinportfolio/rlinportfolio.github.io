@@ -1,0 +1,1244 @@
+body.keybank-page {
+    background: white;
+    color: black;
+}
+
+body.keybank-page #about-popup:not(.is-open) {
+    display: none;
+}
+
+body.keybank-page #about-popup.is-open {
+    display: flex;
+}
+
+.keybank-main {
+    width: 100%;
+    padding-top: 80px;
+}
+
+.keybank-panel {
+    box-sizing: border-box;
+    width: auto;
+    margin-right: 24px;
+    padding: 96px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 40%;
+    grid-template-rows: min-content auto;
+    align-items: center;
+    row-gap: 0;
+    column-gap: 80px;
+    background: black;
+    color: white;
+    border-top-right-radius: 24px;
+}
+
+.keybank-left,
+.keybank-details,
+.keybank-meta,
+.keybank-meta-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.keybank-left {
+    align-items: flex-start;
+    min-width: 0;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    gap: 48px;
+}
+
+.keybank-details {
+    align-items: flex-start;
+    min-width: 0;
+}
+
+.keybank-number,
+.keybank-meta h2,
+.keybank-background h2,
+.keybank-overview-label h2,
+.keybank-overview-content h2 {
+    margin: 0;
+}
+
+.keybank-icon {
+    width: 56px;
+    height: auto;
+    margin: 0 0 24px;
+}
+
+.keybank-title {
+    margin: 0 0 24px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.keybank-subtitle {
+    max-width: 468px;
+    margin: 0;
+    color: var(--textOnBlack);
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.keybank-result {
+    display: block;
+    width: 100%;
+    height: auto;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    border-top-right-radius: 24px;
+}
+
+.keybank-info,
+.keybank-overview,
+.keybank-research {
+    display: flex;
+    width: 100%;
+}
+
+.keybank-meta,
+.keybank-background,
+.keybank-overview-content,
+.keybank-overview-label {
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+}
+
+.keybank-meta {
+    flex: 0 0 339px;
+    width: 339px;
+    min-width: 0;
+    gap: 48px;
+    padding: 72px 48px 72px 96px;
+    border-right: 1px solid black;
+}
+
+.keybank-meta-group {
+    gap: 8px;
+}
+
+.keybank-meta h2,
+.keybank-background h2,
+.keybank-overview-content h2 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.keybank-meta p,
+.keybank-background p,
+.keybank-overview-group p,
+.keybank-overview-results p {
+    margin: 0;
+    color: var(--textOnWhite);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.keybank-background {
+    flex: 1;
+    padding: 72px 120px 72px 48px;
+}
+
+.keybank-background h2,
+.keybank-overview-group h2,
+.keybank-overview-results h2 {
+    margin-bottom: 24px;
+}
+
+.keybank-overview-label {
+    flex: 0 0 376px;
+    width: 376px;
+    padding: 72px 96px 48px;
+    border-right: 1px solid black;
+}
+
+.keybank-overview-label h2 {
+    position: relative;
+    top: -3px;
+    color: var(--primary);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: right;
+}
+
+.keybank-overview-content {
+    flex: 1;
+    padding: 72px 120px 72px 48px;
+}
+
+.keybank-overview-group {
+    margin-bottom: 96px;
+}
+
+.keybank-overview-results {
+    box-sizing: border-box;
+    width: calc(100% + 120px);
+    margin: 0;
+    padding: 36px 120px 36px 36px;
+    background: black;
+    color: white;
+    border-top-left-radius: 24px;
+}
+
+.keybank-overview-results p {
+    color: var(--textOnBlack);
+}
+
+.keybank-overview-results strong {
+    color: white;
+}
+
+.keybank-research-label,
+.keybank-research-content {
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+}
+
+.keybank-research-label {
+    flex: 0 0 376px;
+    width: 376px;
+    padding: 72px 96px 48px;
+    border-right: 1px solid black;
+}
+
+.keybank-research-label h2 {
+    position: relative;
+    top: -3px;
+    margin: 0;
+    color: var(--primary);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: right;
+}
+
+.keybank-research-content {
+    flex: 1;
+    padding: 72px 120px 72px 48px;
+}
+
+.keybank-research-content h2,
+.keybank-research-card h3 {
+    margin: 0;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.keybank-research-content h2 {
+    font-size: 24px;
+}
+
+.keybank-research-audience > p {
+    margin: 24px 0 0;
+    color: var(--textOnWhite);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.keybank-research-methods {
+    margin-top: 96px;
+}
+
+.keybank-research-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.keybank-research-card {
+    box-sizing: border-box;
+    min-width: 0;
+    padding: 24px;
+    border: 1px solid black;
+}
+
+.keybank-research-card h3 {
+    font-size: 20px;
+}
+
+.keybank-research-card p {
+    margin: 24px 0;
+    color: var(--textOnWhite);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.keybank-research-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.keybank-market-research-image {
+    width: 100px !important;
+}
+
+.keybank-previous-research {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 24px;
+    margin-top: 96px;
+    padding: 16px;
+    border: 1px solid black;
+}
+
+.keybank-previous-research img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.keybank-previous-research h3 {
+    margin: 24px 0 24px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.keybank-previous-research ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 24px 0 0;
+    padding-left: 20px;
+}
+
+.keybank-previous-research li,
+.keybank-key-findings li {
+    padding-left: 0;
+    color: var(--textOnWhite);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.keybank-key-findings {
+    margin-top: 96px;
+    color: var(--textOnWhite);
+}
+
+.keybank-key-findings h2 {
+    margin: 0 0 24px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.keybank-key-findings ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.keybank-key-findings span {
+    display: block;
+    margin-top: 8px;
+}
+
+.keybank-insight-prioritization {
+    margin-top: 96px;
+    color: var(--textOnWhite);
+}
+
+.keybank-insight-prioritization h2 {
+    margin: 0 0 24px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.keybank-insight-prioritization > ul,
+.keybank-insight-prioritization ul ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.keybank-insight-prioritization > ul {
+    gap: 48px;
+}
+
+.keybank-insight-prioritization ul ul {
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.keybank-insight-prioritization li {
+    padding-left: 0;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.keybank-design-process {
+    display: flex;
+    width: 100%;
+    color: var(--textOnWhite);
+}
+
+.keybank-design-process-label,
+.keybank-design-process-content {
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+}
+
+.keybank-design-process-label {
+    flex: 0 0 376px;
+    width: 376px;
+    padding: 72px 96px 48px;
+    border-right: 1px solid black;
+}
+
+.keybank-design-process-label h2 {
+    position: relative;
+    top: -3px;
+    margin: 0;
+    color: var(--primary);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.keybank-design-process-content {
+    flex: 1;
+    padding: 72px 120px 72px 48px;
+}
+
+.keybank-design-process-content > h2 {
+    margin: 0 0 24px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.keybank-lofi-images {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.keybank-lofi-images img {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+
+.keybank-design-process-content > .keybank-hifi-heading {
+    margin: 96px 0 24px;
+}
+
+.keybank-hifi-images {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    gap: 24px;
+    align-items: start;
+}
+
+.keybank-hifi-images img {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+
+.keybank-hifi-supporting {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+}
+
+.keybank-hifi-customize {
+    grid-row: span 2;
+}
+
+.keybank-design-process-content > .keybank-insights-lofi-heading {
+    margin: 96px 0 24px;
+}
+
+.keybank-insights-lofi-image {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+
+.keybank-insights-personetics {
+    margin-top: 96px;
+}
+
+.keybank-insights-personetics h2 {
+    margin: 0 0 24px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.keybank-insights-personetics p {
+    margin: 0 0 32px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.keybank-insights-personetics-images {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    align-items: start;
+}
+
+.keybank-insights-personetics-images img {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+
+.keybank-insights-final {
+    margin-top: 96px;
+}
+
+.keybank-insights-final h2 {
+    margin: 0 0 24px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.keybank-insights-final-images {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    align-items: start;
+}
+
+.keybank-insights-final-images img {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+
+.keybank-usability-tests {
+    display: flex;
+    width: 100%;
+}
+
+.keybank-usability-tests-label,
+.keybank-usability-tests-content {
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+}
+
+.keybank-usability-tests-label {
+    flex: 0 0 339px;
+    width: 339px;
+    padding: 72px 96px 48px;
+    border-right: 1px solid black;
+}
+
+.keybank-usability-tests-label h2 {
+    margin: 0;
+    color: var(--primary);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.keybank-usability-tests-content {
+    flex: 1;
+    padding: 72px 120px 72px 48px;
+}
+
+.keybank-usability-tests-content h2 {
+    margin: 0 0 24px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.keybank-usability-tests-content p,
+.keybank-usability-tests-content li {
+    color: var(--textOnWhite);
+    font-size: 14px;
+    line-height: 2;
+}
+
+.keybank-usability-tests-content p {
+    margin: 0;
+}
+
+.keybank-usability-tests-grid {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 48px;
+    row-gap: 24px;
+    margin-top: 24px;
+}
+
+.keybank-usability-tests-value {
+    color: black !important;
+    font-size: 20px !important;
+    line-height: 1.2 !important;
+}
+
+.keybank-usability-tests-section {
+    margin-top: 72px;
+}
+
+.keybank-usability-tests-section ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.keybank-usability-tests-section p + p {
+    margin-top: 8px;
+}
+
+.keybank-usability-tests-section p + p + p {
+    margin-top: 24px;
+}
+
+.keybank-usability-tests-quotes {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.keybank-usability-tests-quotes + p {
+    margin-top: 24px;
+}
+
+.keybank-takeaways {
+    display: flex;
+    width: 100%;
+}
+
+.keybank-takeaways-label,
+.keybank-takeaways-content {
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+}
+
+.keybank-takeaways-label {
+    flex: 0 0 339px;
+    width: 339px;
+    padding: 72px 96px 48px;
+    border-right: 1px solid black;
+}
+
+.keybank-takeaways-label h2 {
+    margin: 0;
+    color: var(--primary);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.keybank-takeaways-content {
+    flex: 1;
+    padding: 72px 120px 72px 48px;
+}
+
+.keybank-takeaways-content h2,
+.keybank-takeaways-copy h3 {
+    margin: 0 0 24px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.keybank-takeaways-content p,
+.keybank-takeaways-content li {
+    color: var(--textOnWhite);
+    font-size: 14px;
+    line-height: 2;
+}
+
+.keybank-takeaways-content p,
+.keybank-takeaways-content ul {
+    margin: 0;
+}
+
+.keybank-takeaways-content ul {
+    padding-left: 20px;
+}
+
+.keybank-takeaways-research {
+    margin-top: 72px;
+}
+
+.keybank-takeaways-research-grid {
+    display: flex;
+    gap: 48px;
+}
+
+.keybank-takeaways-research-grid > div {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.keybank-previous-research h3 {
+    margin: 24px 0 24px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.keybank-takeaways-copy h3 {
+    font-size: 20px;
+}
+
+.keybank-takeaways-copy > p + p {
+    margin-top: 24px;
+}
+
+.keybank-takeaways-metrics {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 48px;
+    row-gap: 24px;
+    margin-top: 48px;
+}
+
+.keybank-takeaways-value {
+    color: black !important;
+    font-size: 20px !important;
+    line-height: 1.2 !important;
+}
+
+.keybank-takeaways-result {
+    margin-top: 48px !important;
+    color: black !important;
+    font-size: 20px !important;
+    line-height: 1.7 !important;
+}
+
+.keybank-takeaways-image {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+    border: 1px solid black;
+}
+
+.keybank-takeaways-image + p {
+    margin-bottom: 8px;
+}
+
+.keybank-cashflow-refinement {
+    margin-top: 96px;
+}
+
+.keybank-cashflow-refinement > h2 {
+    margin: 0 0 48px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.keybank-cashflow-refinement-content {
+    display: flex;
+    gap: 48px;
+}
+
+.keybank-cashflow-comparisons,
+.keybank-cashflow-copy {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.keybank-cashflow-comparisons {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.keybank-cashflow-comparisons > div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.keybank-cashflow-comparisons p,
+.keybank-cashflow-copy p,
+.keybank-cashflow-copy li {
+    color: var(--textOnWhite);
+    font-size: 14px;
+    line-height: 2;
+}
+
+.keybank-cashflow-comparisons p,
+.keybank-cashflow-copy p,
+.keybank-cashflow-copy ul {
+    margin: 0;
+}
+
+.keybank-cashflow-comparisons img {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.keybank-cashflow-copy {
+    display: flex;
+    flex-direction: column;
+    margin-top: 44px;
+}
+
+.keybank-cashflow-copy h3 {
+    margin: 0 0 24px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.keybank-cashflow-copy ul {
+    padding-left: 20px;
+}
+
+.keybank-cashflow-copy > div {
+    margin-top: 48px;
+}
+
+.keybank-final-designs {
+    display: flex;
+    width: 100%;
+}
+
+.keybank-final-designs-label,
+.keybank-final-designs-content {
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+}
+
+.keybank-final-designs-label {
+    flex: 0 0 339px;
+    width: 339px;
+    padding: 72px 96px 48px;
+    border-right: 1px solid black;
+}
+
+.keybank-final-designs-label h2 {
+    margin: 0;
+    color: var(--primary);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.keybank-final-designs-content {
+    flex: 1;
+    padding: 72px 120px 72px 48px;
+}
+
+.keybank-final-design + .keybank-final-design {
+    margin-top: 96px;
+}
+
+.keybank-final-design h2 {
+    margin: 0 0 24px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.keybank-final-design img {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.keybank-conclusion {
+    display: flex;
+    width: 100%;
+}
+
+.keybank-conclusion-label,
+.keybank-conclusion-content {
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+}
+
+.keybank-conclusion-label {
+    flex: 0 0 339px;
+    width: 339px;
+    padding: 72px 96px 48px;
+    border-right: 1px solid black;
+}
+
+.keybank-conclusion-label h2 {
+    margin: 0;
+    color: var(--primary);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.keybank-conclusion-content {
+    flex: 1;
+    padding: 72px 120px 72px 48px;
+}
+
+.keybank-reflection h2,
+.keybank-conclusion-next-steps h2 {
+    margin: 0 0 24px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.keybank-reflection p,
+.keybank-conclusion-next-steps li {
+    margin: 0;
+    color: var(--textOnWhite);
+    font-size: 14px;
+    line-height: 2;
+}
+
+.keybank-conclusion-next-steps {
+    margin-top: 96px;
+}
+
+.keybank-conclusion-next-steps ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.keybank-footer {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    background: white;
+    color: black;
+}
+
+.keybank-footer-identity {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 30%;
+    align-items: center;
+    width: 30%;
+    min-width: 0;
+    padding: 24px 80px 0 96px;
+    background: black;
+    color: white;
+    border-top-right-radius: 24px;
+}
+
+.keybank-footer-identity-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.keybank-footer-signature {
+    display: block;
+    width: 200px;
+    filter: invert(1);
+}
+
+.keybank-footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 48px;
+}
+
+.keybank-footer-links .main-link {
+    color: white;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-family: "DM Sans", sans-serif;
+    text-align: right;
+}
+
+.keybank-footer-links .link-trace {
+    width: 100%;
+    height: 100%;
+}
+
+.keybank-footer-projects {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    min-width: 0;
+    gap: 32px;
+    justify-content: flex-end;
+    margin-left: 48px;
+    padding: 24px 0;
+}
+
+.keybank-footer-projects .study {
+    flex: 0 0 240px;
+    min-width: 0;
+    color: inherit;
+    text-decoration: none;
+}
+
+.keybank-footer-projects .study-number {
+    margin: 0 0 8px;
+    color: var(--primary);
+}
+
+.keybank-footer-projects .study-title {
+    margin: 8px 0 0;
+}
+
+.keybank-footer-projects .study-graphic {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 240px;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 240px;
+    background: black;
+    border: 1px solid black;
+    border-top-right-radius: 24px;
+}
+
+.keybank-footer-projects .study-icon {
+    width: 80px;
+    max-width: 80px;
+    height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .keybank-panel {
+        margin-right: 12px;
+        padding: 64px 48px 64px 24px;
+        row-gap: 0;
+        column-gap: 48px;
+        grid-template-columns: minmax(0, 1fr) 40%;
+    }
+
+    .keybank-info,
+    .keybank-overview,
+    .keybank-research,
+    .keybank-design-process,
+    .keybank-usability-tests,
+    .keybank-takeaways,
+    .keybank-final-designs,
+    .keybank-conclusion,
+    .keybank-footer,
+    .keybank-footer-projects {
+        flex-direction: column;
+    }
+
+    .keybank-meta,
+    .keybank-overview-label,
+    .keybank-research-label,
+    .keybank-design-process-label,
+    .keybank-usability-tests-label,
+    .keybank-takeaways-label,
+    .keybank-final-designs-label,
+    .keybank-conclusion-label {
+        flex: 0 0 auto;
+        width: auto;
+        padding-left: 24px;
+        padding-right: 24px;
+        border-right: 0;
+    }
+
+    .keybank-background,
+    .keybank-overview-content,
+    .keybank-research-content,
+    .keybank-design-process-content,
+    .keybank-usability-tests-content,
+    .keybank-takeaways-content,
+    .keybank-final-designs-content,
+    .keybank-conclusion-content {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .keybank-overview-label h2,
+    .keybank-research-label h2,
+    .keybank-design-process-label h2,
+    .keybank-usability-tests-label h2,
+    .keybank-takeaways-label h2,
+    .keybank-final-designs-label h2,
+    .keybank-conclusion-label h2 {
+        text-align: left;
+    }
+
+    .keybank-footer-identity {
+        flex: 0 0 auto;
+        width: 100%;
+        padding: 48px 12px;
+    }
+
+    .keybank-footer-identity-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .keybank-footer-links {
+        margin-top: 0;
+    }
+
+    .keybank-footer-projects {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 32px;
+        margin-left: 0;
+        padding: 24px;
+    }
+
+    .keybank-footer-projects .study {
+        flex: 0 0 240px;
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .keybank-panel {
+        padding: 48px 48px 48px 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 48px;
+    }
+
+    .keybank-meta,
+    .keybank-background,
+    .keybank-overview-label,
+    .keybank-overview-content,
+    .keybank-research-label,
+    .keybank-research-content,
+    .keybank-design-process-label,
+    .keybank-design-process-content {
+        padding: 48px 24px;
+    }
+
+    .keybank-usability-tests-label,
+    .keybank-usability-tests-content,
+    .keybank-takeaways-label,
+    .keybank-takeaways-content,
+    .keybank-final-designs-label,
+    .keybank-final-designs-content,
+    .keybank-conclusion-label,
+    .keybank-conclusion-content {
+        padding: 48px 24px;
+    }
+
+    .keybank-takeaways-research-grid {
+        flex-direction: column;
+    }
+
+    .keybank-cashflow-refinement-content {
+        flex-direction: column;
+    }
+
+    .keybank-cashflow-copy {
+        margin-top: 0;
+    }
+
+    .keybank-footer {
+        flex-direction: column;
+    }
+
+    .keybank-footer-identity {
+        flex-basis: auto;
+        width: 100%;
+        padding: 48px 12px;
+    }
+
+    .keybank-footer-projects {
+        flex: 1;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 32px;
+        margin-left: 0;
+        padding: 48px 24px;
+    }
+
+    .keybank-footer-projects .study {
+        flex: 0 0 240px;
+        width: 240px;
+    }
+
+
+    .keybank-meta {
+        gap: 48px;
+    }
+
+    .keybank-overview-group {
+        margin-bottom: 64px;
+    }
+
+    .keybank-overview-results {
+        width: calc(100% + 24px);
+        margin-right: -24px;
+        padding: 36px 48px 36px 24px;
+    }
+
+    .keybank-research-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .keybank-previous-research {
+        grid-template-columns: 1fr;
+    }
+
+    .keybank-lofi-images {
+        grid-template-columns: 1fr;
+    }
+
+    .keybank-hifi-images {
+        grid-template-columns: 1fr;
+    }
+
+    .keybank-hifi-supporting {
+        grid-template-columns: 1fr;
+    }
+
+    .keybank-hifi-customize {
+        grid-row: auto;
+    }
+
+    .keybank-insights-personetics-images {
+        grid-template-columns: 1fr;
+    }
+
+    .keybank-insights-final-images {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,14 +1,14 @@
-body.walmart-page {
+body.adelphi-media-page {
     background: white;
     color: black;
 }
 
-.walmart-main {
+.adelphi-media-main {
     width: 100%;
     padding-top: 80px;
 }
 
-.walmart-panel {
+.adelphi-media-panel {
     box-sizing: border-box;
     width: auto;
     margin-right: 24px;
@@ -24,15 +24,15 @@ body.walmart-page {
     border-top-right-radius: 24px;
 }
 
-.walmart-left,
-.walmart-details,
-.walmart-meta,
-.walmart-meta-group {
+.adelphi-media-left,
+.adelphi-media-details,
+.adelphi-media-meta,
+.adelphi-media-meta-group {
     display: flex;
     flex-direction: column;
 }
 
-.walmart-left {
+.adelphi-media-left {
     align-items: flex-start;
     min-width: 0;
     grid-column: 1;
@@ -40,33 +40,33 @@ body.walmart-page {
     gap: 48px;
 }
 
-.walmart-details {
+.adelphi-media-details {
     align-items: flex-start;
     min-width: 0;
 }
 
-.walmart-number,
-.walmart-meta h2,
-.walmart-background h2,
-.walmart-overview-label h2,
-.walmart-overview-content h2 {
+.adelphi-media-number,
+.adelphi-media-meta h2,
+.adelphi-media-background h2,
+.adelphi-media-overview-label h2,
+.adelphi-media-overview-content h2 {
     margin: 0;
 }
 
-.walmart-icon {
+.adelphi-media-icon {
     width: 56px;
     height: auto;
     margin: 0 0 24px;
 }
 
-.walmart-title {
+.adelphi-media-title {
     margin: 0 0 24px;
     font-size: 32px;
     font-weight: 400;
     line-height: 1;
 }
 
-.walmart-subtitle {
+.adelphi-media-subtitle {
     max-width: 468px;
     margin: 0;
     color: var(--textOnBlack);
@@ -74,7 +74,7 @@ body.walmart-page {
     line-height: 1.4;
 }
 
-.walmart-result {
+.adelphi-media-result {
     display: block;
     width: 100%;
     height: auto;
@@ -83,22 +83,22 @@ body.walmart-page {
     border-top-right-radius: 24px;
 }
 
-.walmart-info,
-.walmart-overview,
-.walmart-research {
+.adelphi-media-info,
+.adelphi-media-overview,
+.adelphi-media-research {
     display: flex;
     width: 100%;
 }
 
-.walmart-meta,
-.walmart-background,
-.walmart-overview-content,
-.walmart-overview-label {
+.adelphi-media-meta,
+.adelphi-media-background,
+.adelphi-media-overview-content,
+.adelphi-media-overview-label {
     box-sizing: border-box;
     border-bottom: 1px solid black;
 }
 
-.walmart-meta {
+.adelphi-media-meta {
     flex: 0 0 339px;
     width: 339px;
     min-width: 0;
@@ -107,47 +107,49 @@ body.walmart-page {
     border-right: 1px solid black;
 }
 
-.walmart-meta-group {
+.adelphi-media-meta-group {
     gap: 8px;
 }
 
-.walmart-meta h2,
-.walmart-background h2,
-.walmart-overview-content h2 {
+.adelphi-media-meta h2,
+.adelphi-media-background h2,
+.adelphi-media-overview-content h2 {
     font-size: 24px;
     font-weight: 400;
     line-height: 1;
 }
 
-.walmart-meta p,
-.walmart-background p,
-.walmart-overview-group p,
-.walmart-overview-results p {
+.adelphi-media-meta p,
+.adelphi-media-background p,
+.adelphi-media-overview-group p,
+.adelphi-media-overview-results p {
     margin: 0;
     color: var(--textOnWhite);
     font-size: 14px;
     line-height: 1.7;
 }
 
-.walmart-background {
+.adelphi-media-background {
     flex: 1;
     padding: 72px 120px 72px 48px;
 }
 
-.walmart-background h2,
-.walmart-overview-group h2,
-.walmart-overview-results h2 {
+.adelphi-media-background h2,
+.adelphi-media-overview-group h2,
+.adelphi-media-overview-results h2 {
     margin-bottom: 24px;
 }
 
-.walmart-overview-label {
+.adelphi-media-overview-label {
     flex: 0 0 376px;
     width: 376px;
     padding: 72px 96px 48px;
     border-right: 1px solid black;
 }
 
-.walmart-overview-label h2 {
+.adelphi-media-overview-label h2 {
+    position: relative;
+    top: -3px;
     color: var(--primary);
     font-size: 32px;
     font-weight: 400;
@@ -155,22 +157,16 @@ body.walmart-page {
     text-align: right;
 }
 
-.walmart-overview-label h2,
-.walmart-research-label h2 {
-    position: relative;
-    top: -3px;
-}
-
-.walmart-overview-content {
+.adelphi-media-overview-content {
     flex: 1;
     padding: 72px 120px 72px 48px;
 }
 
-.walmart-overview-group {
+.adelphi-media-overview-group {
     margin-bottom: 96px;
 }
 
-.walmart-overview-results {
+.adelphi-media-overview-results {
     box-sizing: border-box;
     width: calc(100% + 120px);
     margin: 0;
@@ -180,28 +176,30 @@ body.walmart-page {
     border-top-left-radius: 24px;
 }
 
-.walmart-overview-results p {
+.adelphi-media-overview-results p {
     color: var(--textOnBlack);
 }
 
-.walmart-overview-results strong {
+.adelphi-media-overview-results strong {
     color: white;
 }
 
-.walmart-research-label,
-.walmart-research-content {
+.adelphi-media-research-label,
+.adelphi-media-research-content {
     box-sizing: border-box;
     border-bottom: 1px solid black;
 }
 
-.walmart-research-label {
+.adelphi-media-research-label {
     flex: 0 0 376px;
     width: 376px;
     padding: 72px 96px 48px;
     border-right: 1px solid black;
 }
 
-.walmart-research-label h2 {
+.adelphi-media-research-label h2 {
+    position: relative;
+    top: -3px;
     margin: 0;
     color: var(--primary);
     font-size: 32px;
@@ -210,45 +208,46 @@ body.walmart-page {
     text-align: right;
 }
 
-.walmart-research-content {
+.adelphi-media-research-content {
     flex: 1;
     padding: 72px 120px 72px 48px;
 }
 
-.walmart-research-content h2,
-.walmart-research-group h3 {
+.adelphi-media-research-content h2,
+.adelphi-media-research-group h3 {
     margin: 0;
     font-weight: 400;
     line-height: 1;
 }
 
-.walmart-research-content h2 {
+.adelphi-media-research-content h2 {
     font-size: 24px;
 }
 
-.walmart-research-audience > p {
+.adelphi-media-research-audience > p,
+.adelphi-media-competitive-analysis > p {
     margin: 24px 0 0;
     color: var(--textOnWhite);
     font-size: 14px;
     line-height: 1.7;
 }
 
-.walmart-research-statistics {
+.adelphi-media-competitive-analysis {
     margin-top: 96px;
 }
 
-.walmart-research-grid {
+.adelphi-media-research-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 48px;
     margin-top: 48px;
 }
 
-.walmart-research-group h3 {
+.adelphi-media-research-group h3 {
     font-size: 20px;
 }
 
-.walmart-research-group ul {
+.adelphi-media-research-group ul {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -256,257 +255,119 @@ body.walmart-page {
     padding-left: 20px;
 }
 
-.walmart-research-group li {
+.adelphi-media-research-group li {
     padding-left: 0;
     color: var(--textOnWhite);
     font-size: 14px;
     line-height: 1.7;
 }
 
-.walmart-research-highlight {
-    color: #DB0000 !important;
-    font-weight: 700;
-}
-
-.walmart-research-detail {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    align-items: start;
-    gap: 48px;
+.adelphi-media-personas {
     margin-top: 96px;
 }
 
-.walmart-research-detail-copy > p {
-    margin: 24px 0 0;
+.adelphi-media-personas > h2 {
+    margin: 0 0 24px;
+}
+
+.adelphi-media-personas > p {
+    margin: 0;
     color: var(--textOnWhite);
     font-size: 14px;
     line-height: 1.7;
 }
 
-.walmart-research-detail > img {
-    display: block;
-    width: 100%;
-    height: auto;
+.adelphi-media-personas > p + p {
+    margin-top: 24px;
 }
 
-.walmart-competitive-analysis > img {
-    width: 300px;
-    max-width: 100%;
-    justify-self: end;
-}
-
-.walmart-competitive-analysis {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 300px);
-}
-
-.walmart-user-personas > img {
-    box-sizing: border-box;
-    border: 1px solid black;
-}
-
-.walmart-user-personas {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 300px);
-}
-
-.walmart-user-personas .walmart-research-detail-copy {
-    width: 300px;
-    max-width: 100%;
-}
-
-.walmart-key-findings {
-    margin-top: 96px;
-    color: var(--textOnWhite);
-}
-
-.walmart-key-findings h2 {
-    margin: 0 0 24px;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1;
-}
-
-.walmart-key-findings p {
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.7;
-}
-
-.walmart-finding-negative {
-    color: #DB0000;
-    font-weight: 700;
-}
-
-.walmart-design-process {
+.adelphi-media-persona-layout {
     display: flex;
+    gap: 24px;
     width: 100%;
-    color: var(--textOnWhite);
+    margin-top: 24px;
 }
 
-.walmart-design-process-label,
-.walmart-design-process-content {
-    box-sizing: border-box;
-    border-bottom: 1px solid black;
-}
-
-.walmart-design-process-label {
-    flex: 0 0 376px;
-    width: 376px;
-    padding: 72px 96px 48px;
-    border-right: 1px solid black;
-}
-
-.walmart-design-process-label h2 {
-    position: relative;
-    top: -3px;
-    margin: 0;
-    color: var(--primary);
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 1;
-    text-align: right;
-    white-space: nowrap;
-}
-
-.walmart-design-process-content {
-    flex: 1;
-    padding: 72px 120px 72px 48px;
-}
-
-.walmart-design-process-intro h2 {
-    margin: 0 0 24px;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1;
-}
-
-.walmart-design-process-intro p {
-    margin: 0;
-    font-size: 14px;
-    line-height: 2;
-}
-
-.walmart-final-mockup {
+.adelphi-media-persona-stack,
+.adelphi-media-persona-centered {
     display: flex;
-    width: 100%;
-    color: var(--textOnWhite);
-}
-
-.walmart-final-mockup-label,
-.walmart-final-mockup-content {
-    box-sizing: border-box;
-    border-bottom: 1px solid black;
-}
-
-.walmart-final-mockup-label {
-    flex: 0 0 376px;
-    width: 376px;
-    padding: 72px 96px 48px;
-    border-right: 1px solid black;
-}
-
-.walmart-final-mockup-label h2 {
-    position: relative;
-    top: -3px;
-    margin: 0;
-    color: var(--primary);
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 1;
-    text-align: right;
-    white-space: nowrap;
-}
-
-.walmart-final-mockup-content {
     flex: 1;
-    padding: 72px 120px 72px 48px;
+    min-width: 0;
 }
 
-.walmart-final-mockup-content > h2 {
-    margin: 0 0 24px;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1;
-}
-
-.walmart-final-mockup-images {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+.adelphi-media-persona-stack {
+    flex-direction: column;
     gap: 24px;
 }
 
-.walmart-final-mockup-image-group > p {
-    margin: 0 0 8px;
-    font-size: 14px;
-    line-height: 1;
+.adelphi-media-persona-centered {
+    align-items: center;
 }
 
-.walmart-final-mockup-image-group > img {
+.adelphi-media-persona-layout img {
     box-sizing: border-box;
     display: block;
     width: 100%;
-    height: auto;
+    aspect-ratio: 1.612;
+    object-fit: cover;
     border: 1px solid black;
 }
 
-.walmart-final-mockup-features {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin: 24px 0 0;
-    padding-left: 20px;
-}
-
-.walmart-final-mockup-features li {
-    padding-left: 0;
-    font-size: 14px;
-    line-height: 1.7;
-}
-
-.walmart-final-mockup-variation {
+.adelphi-media-key-findings {
     margin-top: 96px;
+    color: var(--textOnWhite);
 }
 
-.walmart-final-mockup-variation > h2 {
+.adelphi-media-key-findings h2 {
     margin: 0 0 24px;
     font-size: 24px;
     font-weight: 400;
     line-height: 1;
 }
 
-.walmart-final-mockup-single-image {
-    box-sizing: border-box;
-    display: block;
-    width: calc((100% - 24px) / 2);
-    height: auto;
-    border: 1px solid black;
+.adelphi-media-key-findings > ul,
+.adelphi-media-key-findings ul ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 20px;
 }
 
-.walmart-final-mockup-caption {
-    margin: 24px 0 0;
+.adelphi-media-key-findings > ul {
+    gap: 48px;
+}
+
+.adelphi-media-key-findings ul ul {
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.adelphi-media-key-findings li {
+    padding-left: 0;
     font-size: 14px;
     line-height: 1.7;
 }
 
-.walmart-conclusion {
+.adelphi-media-design-process {
     display: flex;
     width: 100%;
     color: var(--textOnWhite);
 }
 
-.walmart-conclusion-label,
-.walmart-conclusion-content {
+.adelphi-media-design-process-label,
+.adelphi-media-design-process-content {
     box-sizing: border-box;
     border-bottom: 1px solid black;
 }
 
-.walmart-conclusion-label {
+.adelphi-media-design-process-label {
     flex: 0 0 376px;
     width: 376px;
     padding: 72px 96px 48px;
     border-right: 1px solid black;
 }
 
-.walmart-conclusion-label h2 {
+.adelphi-media-design-process-label h2 {
     position: relative;
     top: -3px;
     margin: 0;
@@ -518,38 +379,216 @@ body.walmart-page {
     white-space: nowrap;
 }
 
-.walmart-conclusion-content {
+.adelphi-media-design-process-content {
     flex: 1;
     padding: 72px 120px 72px 48px;
 }
 
-.walmart-reflection h2,
-.walmart-conclusion-column h2 {
+.adelphi-media-design-notes {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 48px;
+}
+
+.adelphi-media-design-note h2,
+.adelphi-media-sketches h2,
+.adelphi-media-wireframes h2,
+.adelphi-media-style-guide h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.adelphi-media-design-note ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 24px 0 0;
+    padding-left: 20px;
+}
+
+.adelphi-media-design-note li,
+.adelphi-media-sketches p {
+    color: var(--textOnWhite);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.adelphi-media-design-note li {
+    padding-left: 0;
+}
+
+.adelphi-media-sketches {
+    margin-top: 96px;
+}
+
+.adelphi-media-wireframes {
+    margin-top: 96px;
+}
+
+.adelphi-media-style-guide {
+    margin-top: 96px;
+}
+
+.adelphi-media-wireframes h2 {
+    margin-bottom: 24px;
+}
+
+.adelphi-media-sketches p {
+    margin: 24px 0;
+}
+
+.adelphi-media-style-guide p {
+    margin: 24px 0;
+    color: var(--textOnWhite);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.adelphi-media-sketches img,
+.adelphi-media-wireframes img,
+.adelphi-media-style-guide img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.adelphi-media-style-guide img {
+    box-sizing: border-box;
+    width: 50%;
+    border: 1px solid black;
+}
+
+.adelphi-media-final-mockup {
+    display: flex;
+    width: 100%;
+    color: var(--textOnWhite);
+}
+
+.adelphi-media-final-mockup-label,
+.adelphi-media-final-mockup-content {
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+}
+
+.adelphi-media-final-mockup-label {
+    flex: 0 0 376px;
+    width: 376px;
+    padding: 72px 96px 48px;
+    border-right: 1px solid black;
+}
+
+.adelphi-media-final-mockup-label h2 {
+    position: relative;
+    top: -3px;
+    margin: 0;
+    color: var(--primary);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.adelphi-media-final-mockup-content {
+    flex: 1;
+    padding: 72px 120px 72px 48px;
+}
+
+.adelphi-media-final-mockup-content > h2 {
     margin: 0 0 24px;
     font-size: 24px;
     font-weight: 400;
     line-height: 1;
 }
 
-.walmart-reflection p,
-.walmart-conclusion-column p {
+.adelphi-media-final-mockup-content > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.adelphi-media-final-mockup-variation {
+    margin-top: 96px;
+}
+
+.adelphi-media-final-mockup-variation h2 {
+    margin: 0 0 24px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.adelphi-media-final-mockup-variation img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.adelphi-media-conclusion {
+    display: flex;
+    width: 100%;
+    color: var(--textOnWhite);
+}
+
+.adelphi-media-conclusion-label,
+.adelphi-media-conclusion-content {
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+}
+
+.adelphi-media-conclusion-label {
+    flex: 0 0 376px;
+    width: 376px;
+    padding: 72px 96px 48px;
+    border-right: 1px solid black;
+}
+
+.adelphi-media-conclusion-label h2 {
+    position: relative;
+    top: -3px;
+    margin: 0;
+    color: var(--primary);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.adelphi-media-conclusion-content {
+    flex: 1;
+    padding: 72px 120px 72px 48px;
+}
+
+.adelphi-media-reflection h2,
+.adelphi-media-conclusion-column h2 {
+    margin: 0 0 24px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.adelphi-media-reflection p,
+.adelphi-media-conclusion-column p {
     margin: 0;
     font-size: 14px;
     line-height: 2;
 }
 
-.walmart-conclusion-columns {
+.adelphi-media-conclusion-columns {
     display: flex;
     gap: 56px;
     margin-top: 96px;
 }
 
-.walmart-conclusion-column {
+.adelphi-media-conclusion-column {
     flex: 1;
     min-width: 0;
 }
 
-.walmart-footer {
+.adelphi-media-footer {
     box-sizing: border-box;
     display: flex;
     width: 100%;
@@ -557,7 +596,7 @@ body.walmart-page {
     color: black;
 }
 
-.walmart-footer-identity {
+.adelphi-media-footer-identity {
     display: flex;
     flex: 0 0 30%;
     width: 30%;
@@ -570,20 +609,20 @@ body.walmart-page {
     border-top-right-radius: 24px;
 }
 
-.walmart-footer-identity-content {
+.adelphi-media-footer-identity-content {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     width: 100%;
 }
 
-.walmart-footer-signature {
+.adelphi-media-footer-signature {
     display: block;
     width: 200px;
     filter: invert(1);
 }
 
-.walmart-footer-links {
+.adelphi-media-footer-links {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -591,7 +630,7 @@ body.walmart-page {
     margin-top: 48px;
 }
 
-.walmart-footer-links .main-link {
+.adelphi-media-footer-links .main-link {
     color: white;
     background: transparent;
     border: 0;
@@ -601,12 +640,12 @@ body.walmart-page {
     text-align: right;
 }
 
-.walmart-footer-links .link-trace {
+.adelphi-media-footer-links .link-trace {
     width: 100%;
     height: 100%;
 }
 
-.walmart-footer-projects {
+.adelphi-media-footer-projects {
     box-sizing: border-box;
     display: flex;
     flex: 0 0 auto;
@@ -618,23 +657,23 @@ body.walmart-page {
     padding: 24px 0;
 }
 
-.walmart-footer-projects .study {
+.adelphi-media-footer-projects .study {
     flex: 0 0 240px;
     min-width: 0;
     color: inherit;
     text-decoration: none;
 }
 
-.walmart-footer-projects .study-number {
+.adelphi-media-footer-projects .study-number {
     margin: 0 0 8px;
     color: var(--primary);
 }
 
-.walmart-footer-projects .study-title {
+.adelphi-media-footer-projects .study-title {
     margin: 8px 0 0;
 }
 
-.walmart-footer-projects .study-graphic {
+.adelphi-media-footer-projects .study-graphic {
     box-sizing: border-box;
     display: flex;
     flex: 0 0 240px;
@@ -648,19 +687,19 @@ body.walmart-page {
     border-top-right-radius: 24px;
 }
 
-.walmart-footer-projects .study-icon {
+.adelphi-media-footer-projects .study-icon {
     width: 80px;
     max-width: 80px;
     height: auto;
 }
 
-.walmart-footer-projects .study:hover .study-graphic,
-.walmart-footer-projects .study:focus-visible .study-graphic {
+.adelphi-media-footer-projects .study:hover .study-graphic,
+.adelphi-media-footer-projects .study:focus-visible .study-graphic {
     background: white;
 }
 
 @media screen and (max-width: 1200px) {
-    .walmart-panel {
+    .adelphi-media-panel {
         margin-right: 12px;
         padding: 64px 48px 64px 24px;
         row-gap: 0;
@@ -668,24 +707,24 @@ body.walmart-page {
         grid-template-columns: minmax(0, 1fr) 40%;
     }
 
-    .walmart-info,
-    .walmart-overview,
-    .walmart-research,
-    .walmart-design-process,
-    .walmart-final-mockup,
-    .walmart-conclusion,
-    .walmart-footer,
-    .walmart-footer-projects,
-    .walmart-conclusion-columns {
+    .adelphi-media-info,
+    .adelphi-media-overview,
+    .adelphi-media-research,
+    .adelphi-media-design-process,
+    .adelphi-media-final-mockup,
+    .adelphi-media-conclusion,
+    .adelphi-media-footer,
+    .adelphi-media-footer-projects,
+    .adelphi-media-conclusion-columns {
         flex-direction: column;
     }
 
-    .walmart-meta,
-    .walmart-overview-label,
-    .walmart-research-label,
-    .walmart-design-process-label,
-    .walmart-final-mockup-label,
-    .walmart-conclusion-label {
+    .adelphi-media-meta,
+    .adelphi-media-overview-label,
+    .adelphi-media-research-label,
+    .adelphi-media-design-process-label,
+    .adelphi-media-final-mockup-label,
+    .adelphi-media-conclusion-label {
         flex: 0 0 auto;
         width: auto;
         padding-left: 24px;
@@ -693,51 +732,47 @@ body.walmart-page {
         border-right: 0;
     }
 
-    .walmart-research-label,
-    .walmart-design-process-label {
+    .adelphi-media-research-label,
+    .adelphi-media-design-process-label {
         flex: 0 0 auto !important;
         width: auto !important;
     }
 
-    .walmart-background,
-    .walmart-overview-content,
-    .walmart-research-content,
-    .walmart-design-process-content,
-    .walmart-final-mockup-content,
-    .walmart-conclusion-content {
+    .adelphi-media-background,
+    .adelphi-media-overview-content,
+    .adelphi-media-research-content,
+    .adelphi-media-design-process-content,
+    .adelphi-media-final-mockup-content,
+    .adelphi-media-conclusion-content {
         padding-left: 24px;
         padding-right: 24px;
     }
 
-    .walmart-overview-label h2,
-    .walmart-research-label h2,
-    .walmart-design-process-label h2,
-    .walmart-final-mockup-label h2,
-    .walmart-conclusion-label h2 {
+    .adelphi-media-overview-label h2,
+    .adelphi-media-research-label h2,
+    .adelphi-media-design-process-label h2,
+    .adelphi-media-final-mockup-label h2,
+    .adelphi-media-conclusion-label h2 {
         text-align: left;
     }
 
-    .walmart-result {
-        width: 100%;
-    }
-
-    .walmart-footer-identity {
+    .adelphi-media-footer-identity {
         flex: 0 0 auto;
         width: 100%;
         padding: 48px 12px;
     }
 
-    .walmart-footer-identity-content {
+    .adelphi-media-footer-identity-content {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
 
-    .walmart-footer-links {
+    .adelphi-media-footer-links {
         margin-top: 0;
     }
 
-    .walmart-footer-projects {
+    .adelphi-media-footer-projects {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -747,14 +782,14 @@ body.walmart-page {
         padding: 24px;
     }
 
-    .walmart-footer-projects .study {
+    .adelphi-media-footer-projects .study {
         flex: 0 0 240px;
         width: 240px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .walmart-panel {
+    .adelphi-media-panel {
         padding: 48px 48px 48px 24px;
         display: flex;
         flex-direction: column;
@@ -762,86 +797,78 @@ body.walmart-page {
         gap: 48px;
     }
 
-    .walmart-meta,
-    .walmart-background,
-    .walmart-overview-label,
-    .walmart-overview-content,
-    .walmart-research-label,
-    .walmart-research-content,
-    .walmart-design-process-label,
-    .walmart-design-process-content,
-    .walmart-final-mockup-label,
-    .walmart-final-mockup-content,
-    .walmart-conclusion-label,
-    .walmart-conclusion-content {
+    .adelphi-media-meta,
+    .adelphi-media-background,
+    .adelphi-media-overview-label,
+    .adelphi-media-overview-content,
+    .adelphi-media-research-label,
+    .adelphi-media-research-content,
+    .adelphi-media-design-process-label,
+    .adelphi-media-design-process-content,
+    .adelphi-media-final-mockup-label,
+    .adelphi-media-final-mockup-content,
+    .adelphi-media-conclusion-label,
+    .adelphi-media-conclusion-content {
         padding: 48px 24px;
     }
 
-    .walmart-meta {
+    .adelphi-media-meta {
         gap: 48px;
     }
 
-    .walmart-overview-group {
+    .adelphi-media-overview-group {
         margin-bottom: 64px;
     }
 
-    .walmart-overview-results {
+    .adelphi-media-overview-results {
         width: calc(100% + 24px);
         margin-right: -24px;
         padding: 36px 48px 36px 24px;
     }
 
-    .walmart-research-grid {
+    .adelphi-media-research-grid {
         grid-template-columns: 1fr;
     }
 
-    .walmart-research-detail {
-        grid-template-columns: 1fr;
-    }
-
-    .walmart-competitive-analysis > img {
-        order: 2;
-    }
-
-    .walmart-user-personas > img {
-        order: 2;
-    }
-
-    .walmart-final-mockup-images {
-        grid-template-columns: 1fr;
-    }
-
-    .walmart-final-mockup-single-image {
-        width: 100%;
-    }
-
-    .walmart-conclusion {
+    .adelphi-media-persona-layout {
         flex-direction: column;
     }
 
-    .walmart-conclusion-label {
+    .adelphi-media-style-guide img {
+        width: 100%;
+    }
+
+    .adelphi-media-design-notes {
+        grid-template-columns: 1fr;
+    }
+
+    .adelphi-media-conclusion {
+        flex-direction: column;
+    }
+
+    .adelphi-media-conclusion-label {
         flex-basis: auto;
         width: auto;
         border-right: 0;
         border-bottom: 1px solid black;
     }
 
-    .walmart-conclusion-columns {
+    .adelphi-media-conclusion-columns {
         flex-direction: column;
         gap: 48px;
     }
 
-    .walmart-footer {
+    .adelphi-media-footer {
         flex-direction: column;
     }
 
-    .walmart-footer-identity {
+    .adelphi-media-footer-identity {
         flex-basis: auto;
         width: 100%;
         padding: 48px 12px;
     }
 
-    .walmart-footer-projects {
+    .adelphi-media-footer-projects {
         flex: 1;
         flex-direction: row;
         flex-wrap: wrap;
@@ -852,19 +879,8 @@ body.walmart-page {
         padding: 48px 24px;
     }
 
-    .walmart-footer-projects .study {
+    .adelphi-media-footer-projects .study {
         flex: 0 0 240px;
         width: 240px;
-    }
-
-    .walmart-conclusion-label {
-        flex-basis: auto;
-        width: auto;
-        border-right: 0;
-    }
-
-    .walmart-conclusion-columns {
-        flex-direction: column;
-        gap: 48px;
     }
 }

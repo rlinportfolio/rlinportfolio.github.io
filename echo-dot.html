@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Richard Lin - Amazon Echo Dot</title>
+	<link rel="icon" href="./assets/tab-icon.png">
+	<link rel="stylesheet" href="./css/global.css">
+	<link rel="stylesheet" href="./css/echo-dot.css">
+	<script src="./js/global.js" defer></script>
+	<script src="./js/cursor.js" defer></script>
+	<script src="./js/mouse-effect.js" defer></script>
+	<script src="./js/page-transition.js" defer></script>
+</head>
+<body class="echo-dot-page">
+	<header>
+		<a class="text header-home" id="header-text" href="./index.html">Portfolio 2026</a>
+		<button id="menu-button" type="button" aria-label="Open menu" aria-controls="menu-popup" aria-expanded="false">
+			<div id="menu-button-line-1"></div>
+			<div id="menu-button-line-2"></div>
+		</button>
+		<div id="scroll-progress" aria-hidden="true"></div>
+	</header>
+
+	<aside id="menu-popup" aria-hidden="true">
+		<nav id="menu-navigation" aria-label="Main navigation">
+			<a class="menu-link" href="./index.html">Home</a>
+			<a class="menu-link" href="./about.html">About</a>
+			<a class="menu-link" href="./assets/2026-Resume-Richard-Lin.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+			<a class="menu-link" href="https://www.linkedin.com/in/richardlin4375/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+		</nav>
+		<section id="menu-projects" aria-labelledby="menu-projects-title">
+			<p id="menu-projects-title">Projects</p>
+			<nav id="menu-project-list" aria-label="Projects">
+				<a class="menu-project" href="./keybank.html"><span>01</span>KeyBank KBBO+</a>
+				<a class="menu-project" href="./adelphi-media.html"><span>02</span>Adelphi Media</a>
+				<a class="menu-project" href="./walmart.html"><span>03</span>Walmart</a>
+				<a class="menu-project" href="./echo-dot.html"><span>04</span>Amazon Echo Dot</a>
+			</nav>
+		</section>
+	</aside>
+
+	<section id="about-popup" aria-hidden="true" aria-labelledby="about-popup-title">
+		<button id="about-close" type="button" aria-label="Close About popup">
+			<span class="about-close-line about-close-line-1"></span>
+			<span class="about-close-line about-close-line-2"></span>
+		</button>
+		<div id="about-panel">
+			<h1 id="about-popup-title">About</h1>
+			<div id="about-content">
+				<img id="about-image" src="./assets/about-image.jpg" alt="Richard Lin smiling in front of a brick wall">
+				<div id="about-copy">
+					<p>In 6th grade, I built my own desktop computer solely to be able to run Fortnite faster.</p>
+					<p>Since this first introduction to learning about technology, I've spent the following years exploring web design and eventually fell in love with the more creative side---especially how precise and accessible design can completely transform someone's experience, even beyond digital interfaces.</p>
+					<p>Today, I'm a student at the University of North Carolina at Chapel Hill, studying Information Science with a focus in HCI Design, and minoring in Media &amp; Journalism for interactive media. I plan on graduating in May 2027.</p>
+					<p>Outside of design, you'll find me watching (and analyzing) (and reading about) movies, playing guitar and piano, listening to 2010s music, gaming with friends, or going on a walk.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<main class="echo-dot-main">
+		<section class="echo-dot-panel">
+			<div class="echo-dot-left">
+				<p class="echo-dot-number">04</p>
+				<div class="echo-dot-details">
+					<img class="echo-dot-icon" src="./assets/echo.png" alt="Amazon Echo Dot logo">
+					<h1 class="echo-dot-title">Amazon Echo Dot</h1>
+					<p class="echo-dot-subtitle">Redesigning the Amazon 5th Gen Echo Dot’s alarm experience.</p>
+				</div>
+			</div>
+			<img class="echo-dot-result" src="./assets/echo-dot/final-result.png" alt="Final Amazon Echo Dot alarm experience design">
+		</section>
+		<section class="echo-dot-info">
+			<div class="echo-dot-meta">
+				<div class="echo-dot-meta-group">
+					<h2>Role</h2>
+					<p>Sole Researcher and Designer</p>
+				</div>
+				<div class="echo-dot-meta-group">
+					<h2>Timeline</h2>
+					<p>Mar 2026 – Apr 2026 (3 weeks)</p>
+				</div>
+				<div class="echo-dot-meta-group">
+					<h2>Tools</h2>
+					<p>Figma</p>
+				</div>
+			</div>
+			<div class="echo-dot-background">
+				<h2>Background</h2>
+				<p>The Amazon 5th Gen Echo Dot functions as a normal alarm, allowing the user to preset alarm schedules, customize alarm noises, snooze, and stop the alarm through both verbal and physical commands. I evaluated the effectiveness and ease of these interactions with the device, specifically in a user’s waking-up experience, prototyped redesigns of the physical interactions, and reimagined the verbal interactions.<br><br>This project was completed as part of a systems design course (INLS 418) at UNC Chapel Hill.</p>
+			</div>
+		</section>
+		<section class="echo-dot-overview">
+			<div class="echo-dot-overview-label">
+				<h2>Overview</h2>
+			</div>
+			<div class="echo-dot-overview-content">
+				<div class="echo-dot-overview-group">
+					<h2>Problem</h2>
+					<p>1. There is a high rate of misinputs when interacting with the Echo Dot during the wake-up experience.<br><br>2. The time it takes to complete an action with the Echo Dot is extended as a result.</p>
+				</div>
+				<div class="echo-dot-overview-group">
+					<h2>User Goals</h2>
+					<p>1. Wake up on time.<br><br>2. Possible snoozing of the alarm to sleep in.<br><br>3. Decide how long they can sleep in.<br><br>4. Turn off the alarm.</p>
+				</div>
+				<div class="echo-dot-overview-group">
+					<h2>Limitations</h2>
+					<p>• Couldn’t test on real users unless I watched their sleep to wake-up process.<br><br>• Had to rely on personal experience as the sole user.<br><br>• Forum and secondary research did not mention specific issues and mostly praised the device.</p>
+				</div>
+				<div class="echo-dot-overview-results">
+					<h2>Results</h2>
+					<p>1. Redesigned the layout of the top buttons, leading to an estimated <strong>70% reduction in error rate</strong> and an <strong>average task completion time decrease</strong> from about <strong>6 seconds to 2 seconds</strong> when turning off the alarm.<br><br>2. Included a new physical interaction to have the device tell the time.<br><br>3. Removed the need to say the wake-word “Alexa” before issuing commands to the device, theoretically <strong>cutting task completion time by half.</strong><br><br>4. <strong>Lower cognitive load</strong> and easier decision-making for the user because <strong>new features better support situational awareness.</strong></p>
+				</div>
+			</div>
+		</section>
+		<section class="echo-dot-research">
+			<div class="echo-dot-research-label">
+				<h2>Research</h2>
+			</div>
+			<div class="echo-dot-research-content">
+				<div class="echo-dot-research-group">
+					<h2>Target Audience</h2>
+					<p>Individuals who use the Amazon Echo Dot as an alarm, and me.</p>
+				</div>
+				<div class="echo-dot-features">
+					<h2>All Alarm Features</h2>
+					<div class="echo-dot-features-layout">
+						<div class="echo-dot-feature-column echo-dot-feature-left">
+							<div class="echo-dot-feature-group">
+								<h3>App Settings</h3>
+								<p>• Preset alarms with schedules<br>• Change the audio that plays, however, if it plays a playlist, it will only play the first song.<br>• Adjust the alarm volume.<br>• Option for gradually increasing the volume the longer it goes on.</p>
+							</div>
+							<div class="echo-dot-feature-group">
+								<h3>Verbal Commands</h3>
+								<p>• Say “Alexa, set an alarm for [time]” to set an alarm.<br>• Say “Alexa, wake me up in [x time]” to set an alarm x minutes/seconds away.<br>• Say “Alexa, snooze for [x time]” to snooze for X minutes/hours.<br>• Say “Alexa, stop” or a variant of that to stop the alarm.</p>
+							</div>
+						</div>
+						<img class="echo-dot-shadow" src="./assets/echo-dot/dot-shadow.png" alt="Echo Dot button interaction diagram">
+						<div class="echo-dot-feature-column">
+							<div class="echo-dot-feature-group">
+								<h3>Physical Commands</h3>
+								<p>• Circle Button - Turns off the alarm.<br>• Minus Button - Turns the volume down while the alarm plays.<br>• Plus Button - Turns the volume up while the alarm plays.<br>• Touching the top of the device - Snoozes the alarm for 9 minutes.<br>• Circle with Slash Button - Turns off user verbal input (mutes) while the alarm plays.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="echo-dot-usability">
+					<h2>Usability Tests</h2>
+					<p class="echo-dot-usability-subtitle">I conducted a series of tests by evaluating my own experience with the alarm.</p>
+					<div class="echo-dot-usability-grid">
+						<div class="echo-dot-usability-item">
+							<p class="echo-dot-usability-tag">Problem 1</p>
+							<h3>~60% error rate with physical button interactions, particularly for the circular action button.</h3>
+							<ul>
+								<li>Estimated goal completion time when trying to turn off the alarm with the action button is ~6 seconds.</li>
+								<li>Buttons are very small and are similar shapes.</li>
+								<li>Tactically, they feel similar, so it was difficult to find which one was the action button.</li>
+								<li>Hinders level 3 situational awareness. *</li>
+							</ul>
+						</div>
+						<div class="echo-dot-usability-item">
+							<p class="echo-dot-usability-tag">Problem 2</p>
+							<h3>~40% error rate in hearing the wake word Alexa.</h3>
+							<ul>
+								<li>On average, had to say “Alexa stop” 2 - 3 times before it would register through the device.</li>
+								<li>Hinders level 3 situational awareness. *</li>
+							</ul>
+						</div>
+						<div class="echo-dot-usability-item">
+							<p class="echo-dot-usability-tag">Problem 3</p>
+							<h3>There was no physical action to show the time.</h3>
+							<ul>
+								<li>If I had snoozed 3 times and didn’t remember the time anymore, I had to rely on verbal commands.</li>
+								<li>Hinders level 2 situational awareness and therefore level 3 too. *</li>
+							</ul>
+						</div>
+						<div class="echo-dot-usability-item echo-dot-usability-positive">
+							<p class="echo-dot-usability-tag">Positive</p>
+							<h3>Consistent low error rate with the snooze physical command (touching the top).</h3>
+							<ul>
+								<li>Estimated goal completion time for snoozing the alarm by touching the top is ~2 seconds.</li>
+								<li>Supports level 3 situational awareness. *</li>
+							</ul>
+						</div>
+					</div>
+					<div class="echo-dot-awareness">
+						<p><strong>* Levels of Situational Awareness:</strong></p>
+						<ol>
+							<li>Sensory Perception - What we see, hear, and feel. The alarm going off. Feeling the buttons.</li>
+							<li>Comprehension - Translating the sensory perception into understanding. Do we understand what time it is? Do we understand when we have to wake up?</li>
+							<li>Projection - Understanding the situation and deciding what to do. Do we have to turn the alarm off and wake up immediately? Or can we snooze for 10 more minutes?</li>
+						</ol>
+					</div>
+				</div>
+				<div class="echo-dot-key-findings">
+					<h2>Key Findings</h2>
+					<p><span class="echo-dot-finding-positive">+</span> Goal completion is possible through either physical or verbal commands, or both, with the exception of showing the time, which is only available as a verbal command.<br><br><span class="echo-dot-finding-positive">+</span> It was easy to snooze the alarm by just touching the top of it.<br><br><span class="echo-dot-finding-negative">-</span> Due to frustration with the wake word not working, I relied on physical interactions instead.<br><br><span class="echo-dot-finding-negative">-</span> Buttons tactically felt similar, so it was difficult to distinguish through feel alone which one was the action button unless, I lifted my head to look (which I didn’t always want to do).</p>
+				</div>
+			</div>
+		</section>
+		<section class="echo-dot-design-process">
+			<div class="echo-dot-design-process-label">
+				<h2>Design Process</h2>
+			</div>
+			<div class="echo-dot-design-process-content">
+				<div class="echo-dot-design-process-intro">
+					<h2>Ideation</h2>
+					<p>Individuals who use the Amazon Echo Dot as an alarm, and me.</p>
+				</div>
+				<div class="echo-dot-problem">
+					<h3>Problem 1 - Low differentiation in size and shape of physical buttons.</h3>
+					<div class="echo-dot-problem-response">
+						<h4>Tactile Prioritization of Physical Actions</h4>
+						<ol>
+							<li>Action button (circle button) - Change in shape, size, elevation, and/or placement to increase hit rate.</li>
+							<li>Snoozing (touching top of the device) - Leave it as is. Ensure that no new changes hinder this action.</li>
+							<li>Volume buttons (- and + buttons) - Distinguish through shape, size, elevation, and/or placement.</li>
+							<li>Mute button (not relevant for the alarm experience) - Irrelevant to the alarm experience, so it could be moved to the side. However, it’s relevant in other parts of the Echo Dot experience, though not often, so distinguishability is still important.</li>
+						</ol>
+					</div>
+				</div>
+				<div class="echo-dot-problem">
+					<h3>Problem 2 - High error rate in verbal command interpretation.</h3>
+					<div class="echo-dot-problem-response">
+						<ul>
+									<li>If it detects speaking, it turns the alarm volume down, which also lets the user know that it’s listening.</li>
+									<li>Remove the need for the wake word and immediately start listening for commands upon the alarm going off.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="echo-dot-problem">
+					<h3>Problem 3 - No physical interaction for showing the time.</h3>
+					<div class="echo-dot-problem-response">
+						<ul>
+							<li>Add a new button or interaction.</li>
+							<li>Too many buttons would get clustered.</li>
+							<li>A new interaction such as squeezing the Echo Dot could show the time, or tapping the bottom half of the device.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="echo-dot-all-variations">
+					<h2>All Variations</h2>
+					<img src="./assets/echo-dot/dot-all-variations.png" alt="Variations of Echo Dot button layouts">
+				</div>
+			</div>
+		</section>
+		<section class="echo-dot-final-mockup">
+			<div class="echo-dot-final-mockup-label">
+				<h2>Final Mockup</h2>
+			</div>
+			<div class="echo-dot-final-mockup-content">
+				<img class="echo-dot-final-image" src="./assets/echo-dot/dot-final-only.png" alt="Final Echo Dot alarm interface mockup">
+				<div class="echo-dot-final-details">
+					<div class="echo-dot-final-detail">
+						<h3>Larger, elevated action button</h3>
+						<p>Allows user to easily turn off the alarm without mis-clicking another.</p>
+					</div>
+					<div class="echo-dot-final-detail">
+						<h3>Elevated “+” button</h3>
+						<p>Allows user to differentiate from the “−” button more easily.</p>
+					</div>
+					<div class="echo-dot-final-detail">
+						<h3>New volume button placement</h3>
+						<p>They are closer together, which allows the user to feel both at the same time and choose the button that corresponds with their needs.</p>
+					</div>
+					<div class="echo-dot-final-detail">
+						<h3>Unchanged snooze action</h3>
+						<p>To snooze, the user should still touch the top of the Alexa.</p>
+					</div>
+					<div class="echo-dot-final-detail">
+						<h3>New time-telling action</h3>
+						<p>Tapping the lower half of the device will make the Alexa announce the current time.</p>
+					</div>
+					<div class="echo-dot-final-detail">
+						<h3>Clarity in verbal commands</h3>
+						<p>While the alarm is going off, the device will not need the wake-word to listen to commands. When the user is speaking, the volume will be lowered to allow for clarity in hearing commands.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="echo-dot-conclusion">
+			<div class="echo-dot-conclusion-label">
+				<h2>Conclusion</h2>
+			</div>
+			<div class="echo-dot-conclusion-content">
+				<div class="echo-dot-reflection">
+					<h2>Reflection</h2>
+					<p>This project was a great example of applying UX principles beyond just digital interfaces and into physical products. It’s furthered my awareness of physical experiences around me, whether that’s in a car’s dashboard or my cup of coffee in the morning.<br><br>Redesigning this device, having to take into consideration the situation around it, was also unique. Many previous projects I have worked on can be used in any situation and are primarily focused on the isolated experience itself. In this case, the product is tied to the situation it exists within, and so, understanding the levels of situational awareness, its obstacles, and the support the device provided was essential.</p>
+				</div>
+				<div class="echo-dot-conclusion-columns">
+					<div class="echo-dot-conclusion-column">
+						<h2>Next Steps</h2>
+						<p>1. If I had the capacity to build the device or install an attachment that would allow me to test this, I would.<br><br>2. I would also ask others to use the alarm experience and report back their experience with it.</p>
+					</div>
+					<div class="echo-dot-conclusion-column">
+						<h2>Possible Reimaginings</h2>
+						<p>1. Switching snooze and time actions.<br><br>2. Implementing more unique actions, such as squeezing the Alexa.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="echo-dot-footer">
+		<div class="echo-dot-footer-identity">
+			<div class="echo-dot-footer-identity-content">
+				<img src="./assets/signature.png" class="echo-dot-footer-signature" alt="Richard Lin signature">
+				<nav class="echo-dot-footer-links" aria-label="Footer navigation">
+					<a class="text main-link" href="./index.html">Home</a>
+					<a class="text main-link" href="./about.html">About</a>
+					<a class="text main-link" href="./assets/2026-Resume-Richard-Lin.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+					<a class="text main-link" href="https://www.linkedin.com/in/richardlin4375/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+				</nav>
+			</div>
+		</div>
+		<div class="echo-dot-footer-projects">
+			<a class="study" href="./keybank.html">
+				<p class="text study-number">01</p>
+				<div class="study-graphic">
+					<img class="study-icon" src="./assets/key.png" alt="KeyBank logo">
+				</div>
+				<p class="text study-title">KeyBank KBBO+</p>
+			</a>
+			<a class="study" href="./adelphi-media.html">
+				<p class="text study-number">02</p>
+				<div class="study-graphic">
+					<img class="study-icon" src="./assets/adelphi.png" alt="Adelphi Media logo">
+				</div>
+				<p class="text study-title">Adelphi Media</p>
+			</a>
+			<a class="study" href="./walmart.html">
+				<p class="text study-number">03</p>
+				<div class="study-graphic">
+					<img class="study-icon" src="./assets/walmart.png" alt="Walmart logo">
+				</div>
+				<p class="text study-title">Walmart</p>
+			</a>
+		</div>
+	</footer>
+</body>
+</html>
