@@ -668,7 +668,25 @@ header.is-scrolled ~ #menu-popup {
 }
 
 @media screen and (max-width: 767px) {
+    #kbbo-popup {
+        left: 24px;
+        width: calc(100vw - 48px);
+        flex-direction: column;
+        transform: translate(0, calc(-50% + 100vh));
+    }
+
+    #kbbo-popup.is-open {
+        transform: translate(0, -50%);
+    }
+
+    #kbbo-close {
+        order: 0;
+        align-self: flex-end;
+        margin-top: 0;
+    }
+
     #kbbo-panel {
+        width: 100%;
         padding: 32px 24px;
     }
 
