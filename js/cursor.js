@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.appendChild(cursor);
 
     const CLOSE_BUTTON_SELECTOR = "#about-close, #kbbo-close";
+    const PRIMARY_LINK_SELECTOR = ".header-home, .main-link, .menu-link, .menu-project";
 
     const getActiveCloseButton = () => {
         if (document.getElementById("kbbo-popup")?.classList.contains("is-open")) {
@@ -38,6 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         return false;
     };
+
+    const isPrimaryLink = target => target instanceof Element && Boolean(target.closest(PRIMARY_LINK_SELECTOR));
 
     const isOverBlackElement = target => {
         let element = target instanceof Element ? target : null;
@@ -101,6 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cursor.style.left = `${pointerX}px`;
         cursor.style.top = `${pointerY}px`;
         cursor.classList.add("is-visible");
+        cursor.classList.toggle("is-faded-for-primary-link", isPrimaryLink(pointerTarget));
         clockwiseSquare.classList.toggle("is-hovering", isPointerTarget(pointerTarget));
         clockwiseSquare.classList.toggle("is-over-black", isOverBlackElement(pointerTarget));
         const aboutClose = getActiveCloseButton();

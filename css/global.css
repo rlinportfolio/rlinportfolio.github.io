@@ -49,6 +49,11 @@ body {
     height: 0;
     pointer-events: none;
     visibility: hidden;
+    transition: opacity 0.2s ease;
+}
+
+#mouse-cursor.is-faded-for-primary-link {
+    opacity: 0.15;
 }
 
 .mouse-cursor-square,
@@ -230,7 +235,7 @@ header.is-scrolled ~ #menu-popup {
     box-sizing: border-box;
     width: fit-content;
     height: fit-content;
-    padding: 32px;
+    padding: 32px 16px;
     border: 1px solid black;
     border-top-left-radius: 24px;
     background: white;
@@ -404,6 +409,7 @@ header.is-scrolled ~ #menu-popup {
 
 #menu-projects-title {
     margin: 0;
+    margin-left: 16px;
 }
 
 #menu-project-list {
