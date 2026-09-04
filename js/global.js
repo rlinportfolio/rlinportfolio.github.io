@@ -126,6 +126,11 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 	window.addEventListener("scroll", updateAboutBounds, { passive: true });
 
+	if (aboutPopup && sessionStorage.getItem("openAboutPopup")) {
+		sessionStorage.removeItem("openAboutPopup");
+		setAboutOpen(true);
+	}
+
 	document.addEventListener("click", event => {
 		if (!activeMenuButton.contains(event.target) && !menuPopup.contains(event.target)) {
 			setMenuOpen(false);

@@ -404,7 +404,7 @@ header.is-scrolled ~ #menu-popup {
 }
 
 #menu-projects {
-    margin-top: 120px;
+    margin-top: clamp(48px, 8vh, 120px);
 }
 
 #menu-projects-title {
