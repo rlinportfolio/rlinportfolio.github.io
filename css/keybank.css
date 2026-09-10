@@ -130,11 +130,23 @@ body.keybank-page #about-popup.is-open {
 .keybank-meta p,
 .keybank-background p,
 .keybank-overview-group p,
+.keybank-overview-group ul,
 .keybank-overview-results p {
     margin: 0;
     color: var(--textOnWhite);
     font-size: 14px;
     line-height: 1.7;
+}
+
+.keybank-overview-group ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-left: 20px;
+}
+
+.keybank-overview-group li {
+    padding-left: 0;
 }
 
 .keybank-background {
@@ -929,7 +941,8 @@ body.keybank-page #about-popup.is-open {
 
 .keybank-conclusion-next-steps ol {
     margin: 0;
-    padding-left: 20px;
+    padding-left: 0;
+    list-style-position: inside;
 }
 
 .keybank-footer {
@@ -1024,6 +1037,7 @@ body.keybank-page #about-popup.is-open {
     justify-content: center;
     width: 240px;
     height: 240px;
+    cursor: pointer;
     background: black;
     border: 1px solid black;
     border-top-right-radius: 24px;
@@ -1033,6 +1047,11 @@ body.keybank-page #about-popup.is-open {
     width: 80px;
     max-width: 80px;
     height: auto;
+}
+
+.keybank-footer-projects .study:hover .study-graphic,
+.keybank-footer-projects .study:focus-visible .study-graphic {
+    background: white;
 }
 
 @media screen and (max-width: 1200px) {

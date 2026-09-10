@@ -122,11 +122,23 @@ body.adelphi-media-page {
 .adelphi-media-meta p,
 .adelphi-media-background p,
 .adelphi-media-overview-group p,
+.adelphi-media-overview-group ul,
 .adelphi-media-overview-results p {
     margin: 0;
     color: var(--textOnWhite);
     font-size: 14px;
     line-height: 1.7;
+}
+
+.adelphi-media-overview-group ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-left: 20px;
+}
+
+.adelphi-media-overview-group li {
+    padding-left: 0;
 }
 
 .adelphi-media-background {

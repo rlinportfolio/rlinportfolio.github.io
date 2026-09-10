@@ -129,12 +129,24 @@ body.echo-dot-page {
 .echo-dot-meta p,
 .echo-dot-background p,
 .echo-dot-overview-group p,
+.echo-dot-overview-group ul,
 .echo-dot-research-group p,
 .echo-dot-feature-group p {
     margin: 0;
     font-size: 14px;
     color: var(--textOnWhite);
     line-height: 1.7;
+}
+
+.echo-dot-overview-group ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-left: 20px;
+}
+
+.echo-dot-overview-group li {
+    padding-left: 0;
 }
 
 .echo-dot-background {
@@ -284,10 +296,24 @@ body.echo-dot-page {
 }
 
 .echo-dot-research-group p,
-.echo-dot-feature-group p {
+.echo-dot-feature-group p,
+.echo-dot-feature-group ul {
     margin: 0;
     font-size: 14px;
     line-height: 1.7;
+}
+
+.echo-dot-feature-group ul {
+    padding-left: 20px;
+}
+
+.echo-dot-feature-left .echo-dot-feature-group ul {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.echo-dot-feature-group li {
+    padding-left: 0;
 }
 
 .echo-dot-features {
@@ -414,6 +440,8 @@ body.echo-dot-page {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    padding-left: 0;
+    list-style-position: inside;
 }
 
 .echo-dot-key-findings {
@@ -547,7 +575,8 @@ body.echo-dot-page {
 .echo-dot-problem-response ul,
 .echo-dot-problem-response ol {
     margin: 0;
-    padding-left: 24px;
+    padding-left: 0;
+    list-style-position: inside;
 }
 
 .echo-dot-problem-response li {
@@ -868,6 +897,11 @@ body.echo-dot-page {
 
     .echo-dot-feature-left .echo-dot-feature-group {
         text-align: left;
+    }
+
+    .echo-dot-feature-left .echo-dot-feature-group ul {
+        padding-left: 20px;
+        list-style-position: outside;
     }
 
     .echo-dot-feature-column {

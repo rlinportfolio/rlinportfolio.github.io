@@ -122,11 +122,23 @@ body.walmart-page {
 .walmart-meta p,
 .walmart-background p,
 .walmart-overview-group p,
+.walmart-overview-group ul,
 .walmart-overview-results p {
     margin: 0;
     color: var(--textOnWhite);
     font-size: 14px;
     line-height: 1.7;
+}
+
+.walmart-overview-group ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-left: 20px;
+}
+
+.walmart-overview-group li {
+    padding-left: 0;
 }
 
 .walmart-background {
@@ -379,10 +391,21 @@ body.walmart-page {
     line-height: 1;
 }
 
-.walmart-design-process-intro p {
+.walmart-design-process-intro p,
+.walmart-design-process-intro ul {
     margin: 0;
     font-size: 14px;
     line-height: 2;
+}
+
+.walmart-design-process-intro ul {
+    padding-left: 20px;
+}
+
+.walmart-design-process-intro p + p,
+.walmart-design-process-intro p + ul,
+.walmart-design-process-intro ul + p {
+    margin-top: 28px;
 }
 
 .walmart-final-mockup {
