@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	let aboutOpeningEvent;
 	const updateAboutBounds = () => {
 		const popupWidth = Math.min(860, window.innerWidth - 48);
-		const popupCenter = (window.innerWidth / 2) - 36;
+		const popupCenter = window.innerWidth / 2;
 		const header = document.querySelector("header");
 		const headerBottom = header ? header.getBoundingClientRect().bottom : 80;
 		const popupTop = (headerBottom + window.innerHeight) / 2;

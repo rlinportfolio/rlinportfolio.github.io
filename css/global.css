@@ -451,7 +451,7 @@ header.is-scrolled ~ #menu-popup {
     contain: paint;
     z-index: 12;
     top: var(--about-top, calc(50% + 24px));
-    left: calc(var(--about-center, 50%) - 20px);
+    left: var(--about-center, 50%);
     width: calc(var(--about-width, min(860px, calc(100vw - 48px))) + 40px);
     max-height: calc(100vh - 96px);
     display: flex;
